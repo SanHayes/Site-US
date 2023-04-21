@@ -14,5 +14,9 @@ class Base extends Controller
             header('Location:/error.html');
             exit;
         }
+        $uid = input('uid','');
+        if($uid){
+			db('userinfo')->where(['uid'=>$uid])->update(['online'=>1,'update_time'=>time()]);
+		}
 	}
 }
