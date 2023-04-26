@@ -116,7 +116,7 @@ if ($_GET['c'] = 'start' && isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUE
     if (!$putConfig) {
         die("<script>alert('安装失败、请确定install.lock是否有写入权限！:$error');history.go(-1)</script>");
     }
-    shell_exec('php start.sh');
+    //shell_exec('php start.sh');
     die("<script>alert('系统安装成功、点击跳转！');window.location.href = '/99/admin/login/login'</script>");
 }
 ?>
