@@ -39,7 +39,7 @@ return [
     // 默认JSONP处理方法
     'var_jsonp_handler'      => 'callback',
     // 默认时区
-    'default_timezone'       => 'America/New_York',
+    'default_timezone'       => 'Asia/Hong_Kong',
     // 是否开启多语言
     'lang_switch_on'         => true,
     // 默认全局过滤方法 用逗号分隔多个
@@ -60,7 +60,7 @@ return [
     // 禁止访问模块
     'deny_module_list'       => ['common'],
     // 默认控制器名
-    'default_controller'     => 'index',
+    'default_controller'     => 'Index',
     // 默认操作名
     'default_action'         => 'index',
     // 默认验证器
@@ -243,11 +243,12 @@ return [
     ],
     //邮件配置
     'think_email'            => [
+        'SMTP_Secure' => 'ssl',
         'SMTP_HOST'   => 'ssl://smtp.gmail.com', //SMTP服务器
         'SMTP_PORT'   => '465', //SMTP服务器端口
-        'SMTP_USER'   => 'GffexOfficial@gmail.com', //SMTP服务器用户名
-        'SMTP_PASS'   => 'jpgzdergdrskuqqj', //SMTP服务器密码
-        'FROM_EMAIL'  => 'GffexOfficial@gmail.com', //发件人EMAIL
-        'FROM_NAME'   => 'GffexOfficial', //发件人名称
-    ],
+        'SMTP_USER'   => 'hantecgff@gmail.com', //SMTP服务器用户名
+        'SMTP_PASS'   => 'wbfgsnevqchbyfwe', //SMTP服务器密码
+        'FROM_EMAIL'  => 'hantecgff@gmail.com', //发件人EMAIL
+        'FROM_NAME'   => 'Hantec团队', //发件人名称
+    ]
 ];

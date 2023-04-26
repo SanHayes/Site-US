@@ -17,7 +17,22 @@ class Mail extends Controller
             }
         }
         $code = mt_rand(100000,999999);
-        $content = '【GffEx】Your authentication code is '.$code.' , valid for minutes at 10.';
+        $content = '
+        <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <title>Email verification code</title>
+            </head>
+            <body>
+            <div>
+                <p style="text-align: left;font-weight: bold;font-size: 20px;">Dear user：</p>
+                <p style="font-size: 18px;">    Hello! You are currently undergoing email verification, and the verification code for this request is：</p>
+                <p style="font-size: 50px;font-weight: 900;text-align: center">'.$code.'</p>
+                <p style="font-size: 18px;">    The validity period of this verification code is 10 minutes.</p>
+            </div>
+            </body>
+        </html>';
         $user_code = Db::name('usercode')->where(['number'=>$email,'type'=>'mail'])->find();
         if($user_code){
             if(time() - $user_code['time']  < 60){
@@ -25,7 +40,7 @@ class Mail extends Controller
             }
         }
         
-        if($this->send_mail($email,'GffEx',$content)){
+        if($this->send_mail($email,'Hantec团队',$content)){
             $data['number'] = $email;
             $data['code'] = $code;
             $data['type'] = 'mail';
@@ -34,31 +49,31 @@ class Mail extends Controller
                 if(Db::name('usercode')->insertGetId($data)){
                     return json(['code'=>200,'data'=>$email,'msg'=>'success']);
                 }else{
-                    return json(['code'=>-62,'data'=>null,'msg'=>'操作失败！']);
+                    return json(['code'=>-62,'data'=>null,'msg'=>'操作失败2！']);
                 }
             }else{
                 if(Db::name('usercode')->where(['number'=>$email])->update($data)){
                     return json(['code'=>200,'data'=>$email,'msg'=>'success']);
                 }else{
-                    return json(['code'=>-62,'data'=>null,'msg'=>'操作失败！']);
+                    return json(['code'=>-62,'data'=>null,'msg'=>'操作失败3！']);
                 }
             }
         }else{
-            return json(['code'=>-62,'data'=>null,'msg'=>'操作失败！']);
+            return json(['code'=>-62,'data'=>null,'msg'=>'操作失败1！']);
         }
     }
     function send_mail($tomail,$subject = '', $body = '')
     {
-
         $config = Config::get('think_email');
         vendor('phpmailer.PHPMailer');
+        vendor('phpmailer.Exception');
         vendor('phpmailer.SMTP');
         $mail = new \PHPMailer\PHPMailer\PHPMailer();           //实例化PHPMailer对象
         $mail->CharSet = 'UTF-8';           //设定邮件编码，默认ISO-8859-1，如果发中文此项必须设置，否则乱码
         $mail->IsSMTP();                    // 设定使用SMTP服务
         $mail->SMTPDebug = 0;               // SMTP调试功能 0=关闭 1 = 错误和消息 2 = 消息
         $mail->SMTPAuth   = true;                  // 启用 SMTP 验证功能
-        $mail->SMTPSecure = 'ssl';                 // 使用安全协议
+        $mail->SMTPSecure = $config['SMTP_Secure'];                 // 使用安全协议
         $mail->Host       = $config['SMTP_HOST'];  // SMTP 服务器
         $mail->Port       = $config['SMTP_PORT'];  // SMTP服务器的端口号
         $mail->Username   = $config['SMTP_USER'];  // SMTP服务器用户名
@@ -67,12 +82,6 @@ class Mail extends Controller
         $mail->Subject    = $subject;
         $mail->MsgHTML($body);
         $mail->AddAddress($tomail);
-        $mail->addCustomHeader("X-Priority", "3");
-        $mail->addCustomHeader("X-MSMail-Priority", "Normal");
-        $mail->addCustomHeader("X-Mailer", "Microsoft Outlook Express 6.00.2900.2869");   //本文以outlook名义发送邮件，不会被当作垃圾邮件
-        $mail->addCustomHeader("X-MimeOLE", "Produced By Microsoft MimeOLE V6.00.2900.2869");
-        $mail->addCustomHeader("ReturnReceipt", "1");
-        //$mail->ErrorInfo 错误信息
         return $mail->Send() ? true : false;
     }
 }

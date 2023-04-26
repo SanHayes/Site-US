@@ -39,7 +39,7 @@ class Msm extends Controller
     		"50" => "Content contains sensitive words",
     		"51" => "Incorrect phone number"
 	    );
-    	$sendurl = "https://api.smsbao.com/wsms?u=blacktiger&p=206977cbb0a34836901ced3d60d5a2de&m=".urlencode("+".$utel)."&c=".urlencode($content);
+    	$sendurl = "https://api.smsbao.com/wsms?u=hantec&p=66538fa088d845868c1b1c4aedd8ed6a&m=".urlencode("+".$utel)."&c=".urlencode($content);
     	$result =file_get_contents($sendurl);
         if($result == "0"){
             $data['number'] = $utel;

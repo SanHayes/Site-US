@@ -5,8 +5,7 @@ use Swoole\Runtime;
 
 Runtime::enableCoroutine(SWOOLE_HOOK_ALL);
 
-$website = file_get_contents('./website.txt');
-define('API_URL', $website . '/99/api/api/');
+define('API_URL', 'http://127.0.0.1/99/api/api/');
 
 run(function () {
     go(function () {

@@ -1,6 +1,6 @@
 <?php
 ini_set('max_execution_time', 0);
-define('API_URL', 'http://admin.827618.com/99/index/api/');
+define('API_URL', 'http://127.0.0.1/99/api/api/');
 while(true){
 	$t = time();
     if($t % 3 == 0){

@@ -574,9 +574,6 @@ class Index extends Base
             if($key == 'sys_app_url'){
                 $conf[$key] = (isHTTPS() ? 'https://' : 'http://').$_SERVER['HTTP_HOST'].'/app';
             }
-            if($key == 'sys_kefu'){
-                $conf[$key] = (isHTTPS() ? 'https://' : 'http://').$_SERVER['HTTP_HOST'].$item;
-            }
         }
         return json(['code'=>200,'data'=>$conf,'msg'=>'success']);
     }

@@ -24,6 +24,11 @@ class Api extends Controller{
 		//K线数据库
 		$this->klinedata = db('klinedata');
 	}
+	
+	public function test()
+	{
+	    file_put_contents(APP_PATH . 'test.txt','123456');
+	}
 
 	public function getdate()
 	{		
