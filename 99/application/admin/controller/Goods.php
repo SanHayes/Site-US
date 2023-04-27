@@ -19,11 +19,13 @@ class Goods extends Base
 		}
         $pro =  Db::name('productdata')->where('isdelete',0)->order('sort')->select();
         foreach ($pro as $k=>$val) {
+            $info = Db::name('productinfo')->where('pid',$val['pid'])->find();
             $pro[$k]['proorder'] = $val['sort'];
-            $pro[$k]['ptitle'] =$val['Name'];
+            $pro[$k]['ptitle'] =$info['ptitle'];
             $pro[$k]['pcname'] ="外汇";
-            $pro[$k]['point_low'] =1;
-            $pro[$k]['point_top'] =1;
+            $pro[$k]['rands'] =$info['rands'];
+            $pro[$k]['point_low'] =$info['point_low'];
+            $pro[$k]['point_top'] =$info['point_top'];
             $pro[$k]['isopen'] =$val['is_deal'];
           }
         $this->assign('proinfo',$pro);
@@ -40,7 +42,11 @@ class Goods extends Base
 			echo '死你全家!';exit;
 		}
 		if(input('post.')){
+		    
 			$data = input('post.');
+			if(count(explode(',',$data['protime'])) > 4){
+			    $this->error('玩法时间错误',url('/admin/goods/proadd',array('pid'=>$data['pid'])),1,1);
+			}
 			$file = request()->file('pic_'.$data['pid']);
 			if($file){
 			    $info = $file->getInfo();
@@ -60,10 +66,10 @@ class Goods extends Base
                     }
                 }
                 if($data['img'] == ''){
-                    return WPreturn('参数错误',-1);
+                    $this->error('参数错误',url('/admin/goods/proadd',array('pid'=>$data['pid'])),1,1);
                 }
 			}
-
+    
             //修改开市时间
             $opentime_arr = $data['opentime'];
             $opentime_str = '';
@@ -78,11 +84,12 @@ class Goods extends Base
                 $opentime['pid'] = $data['pid'];
                 db('opentime')->insert($opentime);
             }
+
             unset($data['opentime']);
 
             
 			if(!$data['ptitle'] || !$data['cid'] ){
-				return WPreturn('参数错误',-1);
+				$this->error('参数错误',url('/admin/goods/proadd',array('pid'=>$data['pid'])),1,1);
 			}
 			$data['time'] = time();
 			$data['isdelete'] = 0;
@@ -90,20 +97,19 @@ class Goods extends Base
 				$editid = Db::name('productinfo')->update($data);
                 if($editid){
                     db('productdata')->where('pid',$data['pid'])->update(['Name'=>$data['ptitle']]);
-                    $this->error('修改成功',url('/admin/goods/proadd',array('pid'=>$data['pid'])),1,1);
+                    $this->success('修改成功',url('/admin/goods/proadd',array('pid'=>$data['pid'])),1,1);
                 }else{
                     $this->error('修改失败',url('/admin/goods/proadd',array('pid'=>$data['pid'])),1,1);
                 }
 			}else{  //新添加
 				$addid = Db::name('productinfo')->insertGetId($data);
-				
                 if($addid){
                     $p_data['pid'] = $addid;
                     $p_data['Name'] = $data['ptitle'];
                     Db::name('productdata')->insert($p_data);
-                    $this->error('添加成功',url('/admin/goods/proadd',array('pid'=>$data['pid'])),1,1);
+                    $this->success('添加成功',$_SERVER['HTTP_REFERER'],1,1);
                 }else{
-                    $this->error('添加失败',url('/admin/goods/proadd',array('pid'=>$data['pid'])),1,1);
+                    $this->error('添加失败',$_SERVER['HTTP_REFERER'],1,1);
                 }
 			}
 		}else{
@@ -136,15 +142,8 @@ class Goods extends Base
 	 */
 	public function proisopen()
 	{
-	    $dt['is_deal'] = input('isopen');
-        $r =Db::name('productdata')->where(['pid'=>input('pid')])->update($dt);
-        
-        if($r){
-          $this->error('修改成功',url('/admin/goods/prolist',array('pid'=>$data['pid'])),1,1);
-        }else{
-          $this->error('修改失败',url('/admin/goods/prolist',array('pid'=>$data['pid'])),1,1);
-        }
-       //header("Location:/admin/goods/prolist.html");
+        $r = Db::name('productdata')->where(['pid'=>input('pid')])->update(['is_deal'=>input('isopen')]);
+        echo "<script>self.location='".$_SERVER['HTTP_REFERER'] .url('goods/prolist')."'</script>";
 //		if($this->otype != 3){
 //			echo '死你全家!';exit;
 //		}
