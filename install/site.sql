@@ -1,21 +1,19 @@
 /*
- Navicat Premium Data Transfer
+Navicat MySQL Data Transfer
 
- Source Server         : 43.134.197.30_3306
- Source Server Type    : MySQL
- Source Server Version : 50740 (5.7.40-log)
- Source Host           : 43.134.197.30:3306
- Source Schema         : site
+Source Server         : localhost_3306
+Source Server Version : 50553
+Source Host           : localhost:3306
+Source Database       : site_us
 
- Target Server Type    : MySQL
- Target Server Version : 50740 (5.7.40-log)
- File Encoding         : 65001
+Target Server Type    : MYSQL
+Target Server Version : 50553
+File Encoding         : 65001
 
- Date: 21/04/2023 22:11:41
+Date: 2023-04-27 17:50:54
 */
 
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
+SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
 -- Table structure for admin
@@ -32,9 +30,7 @@ CREATE TABLE `admin` (
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
-BEGIN;
-INSERT INTO `admin` (`id`, `username`, `password`) VALUES (3, 'admin', 'b1a5f73e35932ef9c7d437f7f898a5a3');
-COMMIT;
+INSERT INTO `admin` VALUES ('3', 'admin', 'b1a5f73e35932ef9c7d437f7f898a5a3');
 
 -- ----------------------------
 -- Table structure for friend
@@ -56,76 +52,94 @@ CREATE TABLE `friend` (
 -- ----------------------------
 -- Records of friend
 -- ----------------------------
-BEGIN;
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (229, 29, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (230, 1, 29, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (231, 30, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (232, 1, 30, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (233, 30, 29, 'adminaa', 'chatting', 1595507764, 1380, 1);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (234, 29, 30, '', 'chatting', 1595764318, 1380, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (235, 36, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (236, 1, 36, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (237, 37, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (238, 1, 37, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (239, 40, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (240, 1, 40, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (241, 48, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (242, 1, 48, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (243, 49, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (244, 1, 49, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (245, 50, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (246, 1, 50, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (247, 48, 50, '', 'chatting', 1595584301, 1376, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (248, 50, 48, '', 'chatting', 1595588852, 1376, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (249, 53, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (250, 1, 53, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (251, 54, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (252, 1, 54, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (253, 55, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (254, 1, 55, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (255, 54, 55, '', 'chatting', 1595583711, 1378, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (256, 55, 54, '', 'chatting', 1595575037, 1378, 2);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (257, 58, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (258, 1, 58, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (259, 59, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (260, 1, 59, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (261, 60, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (262, 1, 60, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (263, 57, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (264, 1, 57, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (265, 61, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (266, 1, 61, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (267, 62, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (268, 1, 62, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (269, 63, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (270, 1, 63, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (271, 64, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (272, 1, 64, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (273, 65, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (274, 1, 65, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (275, 68, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (276, 1, 68, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (277, 68, 64, '', 'chatting', 1596100080, 1386, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (278, 64, 68, '', 'chatting', 1596099867, 1386, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (279, 70, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (280, 1, 70, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (281, 71, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (282, 1, 71, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (283, 70, 71, '', 'chatting', 1596172410, 1393, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (284, 71, 70, '17773589991', 'chatting', 1596172568, 1393, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (285, 72, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (286, 1, 72, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (287, 73, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (288, 1, 73, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (289, 75, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (290, 1, 75, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (291, 79, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (292, 1, 79, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (293, 84, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (294, 1, 84, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (295, 85, 1, '', 'hidden', 0, 0, 0);
-INSERT INTO `friend` (`fid`, `uid`, `friend_uid`, `remark`, `state`, `last_read_time`, `last_mid`, `unread_count`) VALUES (296, 1, 85, '', 'hidden', 0, 0, 0);
-COMMIT;
+INSERT INTO `friend` VALUES ('229', '29', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('230', '1', '29', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('231', '30', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('232', '1', '30', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('233', '30', '29', 'adminaa', 'chatting', '1595507764', '1380', '1');
+INSERT INTO `friend` VALUES ('234', '29', '30', '', 'chatting', '1595764318', '1380', '0');
+INSERT INTO `friend` VALUES ('235', '36', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('236', '1', '36', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('237', '37', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('238', '1', '37', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('239', '40', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('240', '1', '40', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('241', '48', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('242', '1', '48', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('243', '49', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('244', '1', '49', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('245', '50', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('246', '1', '50', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('247', '48', '50', '', 'chatting', '1595584301', '1376', '0');
+INSERT INTO `friend` VALUES ('248', '50', '48', '', 'chatting', '1595588852', '1376', '0');
+INSERT INTO `friend` VALUES ('249', '53', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('250', '1', '53', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('251', '54', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('252', '1', '54', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('253', '55', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('254', '1', '55', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('255', '54', '55', '', 'chatting', '1595583711', '1378', '0');
+INSERT INTO `friend` VALUES ('256', '55', '54', '', 'chatting', '1595575037', '1378', '2');
+INSERT INTO `friend` VALUES ('257', '58', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('258', '1', '58', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('259', '59', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('260', '1', '59', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('261', '60', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('262', '1', '60', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('263', '57', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('264', '1', '57', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('265', '61', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('266', '1', '61', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('267', '62', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('268', '1', '62', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('269', '63', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('270', '1', '63', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('271', '64', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('272', '1', '64', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('273', '65', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('274', '1', '65', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('275', '68', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('276', '1', '68', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('277', '68', '64', '', 'chatting', '1596100080', '1386', '0');
+INSERT INTO `friend` VALUES ('278', '64', '68', '', 'chatting', '1596099867', '1386', '0');
+INSERT INTO `friend` VALUES ('279', '70', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('280', '1', '70', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('281', '71', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('282', '1', '71', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('283', '70', '71', '', 'chatting', '1596172410', '1393', '0');
+INSERT INTO `friend` VALUES ('284', '71', '70', '17773589991', 'chatting', '1596172568', '1393', '0');
+INSERT INTO `friend` VALUES ('285', '72', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('286', '1', '72', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('287', '73', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('288', '1', '73', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('289', '75', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('290', '1', '75', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('291', '79', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('292', '1', '79', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('293', '84', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('294', '1', '84', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('295', '85', '1', '', 'hidden', '0', '0', '0');
+INSERT INTO `friend` VALUES ('296', '1', '85', '', 'hidden', '0', '0', '0');
+
+-- ----------------------------
+-- Table structure for groups
+-- ----------------------------
+DROP TABLE IF EXISTS `groups`;
+CREATE TABLE `groups` (
+  `gid` int(11) NOT NULL AUTO_INCREMENT,
+  `groupname` varchar(60) NOT NULL COMMENT '群名称',
+  `uid` int(11) NOT NULL COMMENT '拥有者id',
+  `avatar` varchar(100) NOT NULL COMMENT '群头像',
+  `state` enum('normal','disabled') DEFAULT 'normal' COMMENT 'normal：表示正常；disabled：表示解散',
+  `timestamp` int(11) NOT NULL DEFAULT '0' COMMENT '创建时间',
+  PRIMARY KEY (`gid`),
+  KEY `uid` (`uid`)
+) ENGINE=MyISAM AUTO_INCREMENT=76 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of groups
+-- ----------------------------
+INSERT INTO `groups` VALUES ('75', '交流群', '54', '/avatar.php?uid=54,55', 'normal', '1595575053');
 
 -- ----------------------------
 -- Table structure for group_member
@@ -148,34 +162,10 @@ CREATE TABLE `group_member` (
 -- ----------------------------
 -- Records of group_member
 -- ----------------------------
-BEGIN;
-INSERT INTO `group_member` (`id`, `gid`, `uid`, `remark`, `state`, `last_read_time`, `forbidden`) VALUES (256, 74, 50, '', 'chatting', 1595610178, 0);
-INSERT INTO `group_member` (`id`, `gid`, `uid`, `remark`, `state`, `last_read_time`, `forbidden`) VALUES (257, 74, 48, '', 'chatting', 1595578014, 0);
-INSERT INTO `group_member` (`id`, `gid`, `uid`, `remark`, `state`, `last_read_time`, `forbidden`) VALUES (258, 75, 54, '', 'chatting', 1595584098, 0);
-INSERT INTO `group_member` (`id`, `gid`, `uid`, `remark`, `state`, `last_read_time`, `forbidden`) VALUES (259, 75, 55, '', 'chatting', 1595575446, 0);
-COMMIT;
-
--- ----------------------------
--- Table structure for groups
--- ----------------------------
-DROP TABLE IF EXISTS `groups`;
-CREATE TABLE `groups` (
-  `gid` int(11) NOT NULL AUTO_INCREMENT,
-  `groupname` varchar(60) NOT NULL COMMENT '群名称',
-  `uid` int(11) NOT NULL COMMENT '拥有者id',
-  `avatar` varchar(100) NOT NULL COMMENT '群头像',
-  `state` enum('normal','disabled') DEFAULT 'normal' COMMENT 'normal：表示正常；disabled：表示解散',
-  `timestamp` int(11) NOT NULL DEFAULT '0' COMMENT '创建时间',
-  PRIMARY KEY (`gid`),
-  KEY `uid` (`uid`)
-) ENGINE=MyISAM AUTO_INCREMENT=76 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of groups
--- ----------------------------
-BEGIN;
-INSERT INTO `groups` (`gid`, `groupname`, `uid`, `avatar`, `state`, `timestamp`) VALUES (75, '交流群', 54, '/avatar.php?uid=54,55', 'normal', 1595575053);
-COMMIT;
+INSERT INTO `group_member` VALUES ('256', '74', '50', '', 'chatting', '1595610178', '0');
+INSERT INTO `group_member` VALUES ('257', '74', '48', '', 'chatting', '1595578014', '0');
+INSERT INTO `group_member` VALUES ('258', '75', '54', '', 'chatting', '1595584098', '0');
+INSERT INTO `group_member` VALUES ('259', '75', '55', '', 'chatting', '1595575446', '0');
 
 -- ----------------------------
 -- Table structure for message
@@ -198,55 +188,53 @@ CREATE TABLE `message` (
 -- ----------------------------
 -- Records of message
 -- ----------------------------
-BEGIN;
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1347, '29', '30', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', 1595482681);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1348, '29', '30', '121212', 'friend', 'message', 1595482688);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1349, '29', '30', '2121', 'friend', 'message', 1595482691);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1350, '29', '30', '21212', 'friend', 'message', 1595482693);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1351, '29', '30', '121212', 'friend', 'message', 1595482696);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1352, '30', '29', '你好', 'friend', 'message', 1595498157);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1353, '30', '29', '此消息已撤回', 'friend', 'notice', 1595498249);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1354, '30', '29', '此消息已撤回', 'friend', 'notice', 1595498274);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1355, '30', '29', 'voice(//uub.zgshiyou.com/upload/files/202007/235f195f49ee50.wav)', 'friend', 'message', 1595498313);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1356, '1', '48', '欢迎登录,有事请直接发消息给我,,如果没有及时回复请加唯一QQ_26333 16644 您本次的访问IP : 183.22.253.225', 'friend', 'message', 0);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1357, '1', '48', '欢迎登录,有事请直接发消息给我,,如果没有及时回复请加唯一QQ_26333 16644 您本次的访问IP : 183.22.253.225', 'friend', 'message', 0);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1358, '1', '30', '欢迎登录,有事请直接发消息给我,,如果没有及时回复请加唯一QQ_26333 16644 您本次的访问IP : 183.22.253.225', 'friend', 'message', 0);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1359, '50', '48', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', 1595523540);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1360, '48', '50', '121212', 'friend', 'message', 1595523546);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1361, '50', '48', '[表情0]', 'friend', 'message', 1595523548);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1362, '48', '50', 'voice(//uub.zgshiyou.com/upload/files/202007/245f19c1dfbd28.wav)', 'friend', 'message', 1595523551);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1363, '50', '74', '[一桶金]({POPBASEURI}user/detail/50) 邀请 [GOODSSO]({POPBASEURI}user/detail/48) 加入了群聊', 'group', 'notice', 1595523600);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1364, '50', '74', '好给你', 'group', 'message', 1595523608);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1365, '48', '74', '[表情3]', 'group', 'message', 1595523624);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1366, '50', '74', '[表情0]', 'group', 'message', 1595523649);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1367, '48', '74', '![图片](//uub.zgshiyou.com/upload/images/202007/245f19c4281275.png)', 'group', 'message', 1595524136);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1368, '50', '74', 'uu', 'group', 'message', 1595524358);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1369, '50', '74', 'voice(//uub.zgshiyou.com/upload/files/202007/245f19c50eb230.wav)', 'group', 'message', 1595524366);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1370, '55', '54', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', 1595575037);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1371, '54', '75', '[zjs1989]({POPBASEURI}user/detail/54) 邀请 [aa1212]({POPBASEURI}user/detail/55) 加入了群聊', 'group', 'notice', 1595575053);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1372, '54', '75', '你们好', 'group', 'message', 1595575082);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1373, '48', '50', '3232', 'friend', 'message', 1595577302);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1374, '48', '50', '[表情1][表情2][表情3][表情24]', 'friend', 'message', 1595577309);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1375, '48', '74', 'ppppp', 'group', 'message', 1595577409);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1376, '48', '50', '*湿答答', 'friend', 'message', 1595577815);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1377, '54', '55', '114', 'friend', 'message', 1595581615);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1378, '54', '55', '在吗', 'friend', 'message', 1595583673);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1379, '50', '74', 'voice(//uub.zgshiyou.com/upload/files/202007/255f1b144032c0.wav)', 'group', 'message', 1595610176);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1380, '29', '30', '你好', 'friend', 'message', 1595764314);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1381, '64', '68', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', 1596099605);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1382, '64', '68', '你好', 'friend', 'message', 1596099688);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1383, '64', '68', '你好', 'friend', 'message', 1596099697);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1384, '68', '64', '1', 'friend', 'message', 1596099710);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1385, '68', '64', '1', 'friend', 'message', 1596099717);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1386, '64', '68', '1', 'friend', 'message', 1596099870);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1387, '71', '70', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', 1596172246);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1388, '71', '70', '121212', 'friend', 'message', 1596172260);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1389, '71', '70', 'qweqq ', 'friend', 'message', 1596172263);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1390, '71', '70', 'nihao', 'friend', 'message', 1596172268);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1391, '70', '71', 'good', 'friend', 'message', 1596172280);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1392, '71', '70', '[表情1]', 'friend', 'message', 1596172295);
-INSERT INTO `message` (`mid`, `from`, `to`, `content`, `type`, `sub_type`, `timestamp`) VALUES (1393, '70', '71', '![图片](//uub.zgshiyou.com/upload/images/202007/315f23a832da62.png)', 'friend', 'message', 1596172338);
-COMMIT;
+INSERT INTO `message` VALUES ('1347', '29', '30', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', '1595482681');
+INSERT INTO `message` VALUES ('1348', '29', '30', '121212', 'friend', 'message', '1595482688');
+INSERT INTO `message` VALUES ('1349', '29', '30', '2121', 'friend', 'message', '1595482691');
+INSERT INTO `message` VALUES ('1350', '29', '30', '21212', 'friend', 'message', '1595482693');
+INSERT INTO `message` VALUES ('1351', '29', '30', '121212', 'friend', 'message', '1595482696');
+INSERT INTO `message` VALUES ('1352', '30', '29', '你好', 'friend', 'message', '1595498157');
+INSERT INTO `message` VALUES ('1353', '30', '29', '此消息已撤回', 'friend', 'notice', '1595498249');
+INSERT INTO `message` VALUES ('1354', '30', '29', '此消息已撤回', 'friend', 'notice', '1595498274');
+INSERT INTO `message` VALUES ('1355', '30', '29', 'voice(//uub.zgshiyou.com/upload/files/202007/235f195f49ee50.wav)', 'friend', 'message', '1595498313');
+INSERT INTO `message` VALUES ('1356', '1', '48', '欢迎登录,有事请直接发消息给我,,如果没有及时回复请加唯一QQ_26333 16644 您本次的访问IP : 183.22.253.225', 'friend', 'message', '0');
+INSERT INTO `message` VALUES ('1357', '1', '48', '欢迎登录,有事请直接发消息给我,,如果没有及时回复请加唯一QQ_26333 16644 您本次的访问IP : 183.22.253.225', 'friend', 'message', '0');
+INSERT INTO `message` VALUES ('1358', '1', '30', '欢迎登录,有事请直接发消息给我,,如果没有及时回复请加唯一QQ_26333 16644 您本次的访问IP : 183.22.253.225', 'friend', 'message', '0');
+INSERT INTO `message` VALUES ('1359', '50', '48', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', '1595523540');
+INSERT INTO `message` VALUES ('1360', '48', '50', '121212', 'friend', 'message', '1595523546');
+INSERT INTO `message` VALUES ('1361', '50', '48', '[表情0]', 'friend', 'message', '1595523548');
+INSERT INTO `message` VALUES ('1362', '48', '50', 'voice(//uub.zgshiyou.com/upload/files/202007/245f19c1dfbd28.wav)', 'friend', 'message', '1595523551');
+INSERT INTO `message` VALUES ('1363', '50', '74', '[一桶金]({POPBASEURI}user/detail/50) 邀请 [GOODSSO]({POPBASEURI}user/detail/48) 加入了群聊', 'group', 'notice', '1595523600');
+INSERT INTO `message` VALUES ('1364', '50', '74', '好给你', 'group', 'message', '1595523608');
+INSERT INTO `message` VALUES ('1365', '48', '74', '[表情3]', 'group', 'message', '1595523624');
+INSERT INTO `message` VALUES ('1366', '50', '74', '[表情0]', 'group', 'message', '1595523649');
+INSERT INTO `message` VALUES ('1367', '48', '74', '![图片](//uub.zgshiyou.com/upload/images/202007/245f19c4281275.png)', 'group', 'message', '1595524136');
+INSERT INTO `message` VALUES ('1368', '50', '74', 'uu', 'group', 'message', '1595524358');
+INSERT INTO `message` VALUES ('1369', '50', '74', 'voice(//uub.zgshiyou.com/upload/files/202007/245f19c50eb230.wav)', 'group', 'message', '1595524366');
+INSERT INTO `message` VALUES ('1370', '55', '54', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', '1595575037');
+INSERT INTO `message` VALUES ('1371', '54', '75', '[zjs1989]({POPBASEURI}user/detail/54) 邀请 [aa1212]({POPBASEURI}user/detail/55) 加入了群聊', 'group', 'notice', '1595575053');
+INSERT INTO `message` VALUES ('1372', '54', '75', '你们好', 'group', 'message', '1595575082');
+INSERT INTO `message` VALUES ('1373', '48', '50', '3232', 'friend', 'message', '1595577302');
+INSERT INTO `message` VALUES ('1374', '48', '50', '[表情1][表情2][表情3][表情24]', 'friend', 'message', '1595577309');
+INSERT INTO `message` VALUES ('1375', '48', '74', 'ppppp', 'group', 'message', '1595577409');
+INSERT INTO `message` VALUES ('1376', '48', '50', '*湿答答', 'friend', 'message', '1595577815');
+INSERT INTO `message` VALUES ('1377', '54', '55', '114', 'friend', 'message', '1595581615');
+INSERT INTO `message` VALUES ('1378', '54', '55', '在吗', 'friend', 'message', '1595583673');
+INSERT INTO `message` VALUES ('1379', '50', '74', 'voice(//uub.zgshiyou.com/upload/files/202007/255f1b144032c0.wav)', 'group', 'message', '1595610176');
+INSERT INTO `message` VALUES ('1380', '29', '30', '你好', 'friend', 'message', '1595764314');
+INSERT INTO `message` VALUES ('1381', '64', '68', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', '1596099605');
+INSERT INTO `message` VALUES ('1382', '64', '68', '你好', 'friend', 'message', '1596099688');
+INSERT INTO `message` VALUES ('1383', '64', '68', '你好', 'friend', 'message', '1596099697');
+INSERT INTO `message` VALUES ('1384', '68', '64', '1', 'friend', 'message', '1596099710');
+INSERT INTO `message` VALUES ('1385', '68', '64', '1', 'friend', 'message', '1596099717');
+INSERT INTO `message` VALUES ('1386', '64', '68', '1', 'friend', 'message', '1596099870');
+INSERT INTO `message` VALUES ('1387', '71', '70', '我通过了你的好友请求，我们来聊天吧', 'friend', 'message', '1596172246');
+INSERT INTO `message` VALUES ('1388', '71', '70', '121212', 'friend', 'message', '1596172260');
+INSERT INTO `message` VALUES ('1389', '71', '70', 'qweqq ', 'friend', 'message', '1596172263');
+INSERT INTO `message` VALUES ('1390', '71', '70', 'nihao', 'friend', 'message', '1596172268');
+INSERT INTO `message` VALUES ('1391', '70', '71', 'good', 'friend', 'message', '1596172280');
+INSERT INTO `message` VALUES ('1392', '71', '70', '[表情1]', 'friend', 'message', '1596172295');
+INSERT INTO `message` VALUES ('1393', '70', '71', '![图片](//uub.zgshiyou.com/upload/images/202007/315f23a832da62.png)', 'friend', 'message', '1596172338');
 
 -- ----------------------------
 -- Table structure for notice
@@ -268,16 +256,14 @@ CREATE TABLE `notice` (
 -- ----------------------------
 -- Records of notice
 -- ----------------------------
-BEGIN;
-INSERT INTO `notice` (`nid`, `from`, `to`, `type`, `data`, `operation`, `timestamp`) VALUES (144, 30, 29, 'add_friend', '{\"postscript\":\"\\u6211\\u662f123456\"}', 'agree', 1595482370);
-INSERT INTO `notice` (`nid`, `from`, `to`, `type`, `data`, `operation`, `timestamp`) VALUES (145, 48, 50, 'add_friend', '{\"postscript\":\"\\u6211\\u662fGOODSSO\"}', 'agree', 1595523535);
-INSERT INTO `notice` (`nid`, `from`, `to`, `type`, `data`, `operation`, `timestamp`) VALUES (146, 40, 30, 'add_friend', '{\"postscript\":\"\\u6211\\u662f13333333333\"}', 'not_operated', 1595560241);
-INSERT INTO `notice` (`nid`, `from`, `to`, `type`, `data`, `operation`, `timestamp`) VALUES (147, 54, 55, 'add_friend', '{\"postscript\":\"\\u6211\\u662fzjs1989\"}', 'agree', 1595575023);
-INSERT INTO `notice` (`nid`, `from`, `to`, `type`, `data`, `operation`, `timestamp`) VALUES (148, 68, 64, 'add_friend', '{\"postscript\":\"\\u6211\\u662fTTtaohua\"}', 'agree', 1596099575);
-INSERT INTO `notice` (`nid`, `from`, `to`, `type`, `data`, `operation`, `timestamp`) VALUES (149, 70, 67, 'add_friend', '{\"postscript\":\"\\u6211\\u662f17773589999\"}', 'not_operated', 1596170703);
-INSERT INTO `notice` (`nid`, `from`, `to`, `type`, `data`, `operation`, `timestamp`) VALUES (150, 70, 71, 'add_friend', '{\"postscript\":\"\\u6211\\u662f17773589999\"}', 'agree', 1596172242);
-INSERT INTO `notice` (`nid`, `from`, `to`, `type`, `data`, `operation`, `timestamp`) VALUES (151, 84, 82, 'add_friend', '{\"postscript\":\"\\u6211\\u662f17773584219\"}', 'not_operated', 1596294234);
-COMMIT;
+INSERT INTO `notice` VALUES ('144', '30', '29', 'add_friend', '{\"postscript\":\"\\u6211\\u662f123456\"}', 'agree', '1595482370');
+INSERT INTO `notice` VALUES ('145', '48', '50', 'add_friend', '{\"postscript\":\"\\u6211\\u662fGOODSSO\"}', 'agree', '1595523535');
+INSERT INTO `notice` VALUES ('146', '40', '30', 'add_friend', '{\"postscript\":\"\\u6211\\u662f13333333333\"}', 'not_operated', '1595560241');
+INSERT INTO `notice` VALUES ('147', '54', '55', 'add_friend', '{\"postscript\":\"\\u6211\\u662fzjs1989\"}', 'agree', '1595575023');
+INSERT INTO `notice` VALUES ('148', '68', '64', 'add_friend', '{\"postscript\":\"\\u6211\\u662fTTtaohua\"}', 'agree', '1596099575');
+INSERT INTO `notice` VALUES ('149', '70', '67', 'add_friend', '{\"postscript\":\"\\u6211\\u662f17773589999\"}', 'not_operated', '1596170703');
+INSERT INTO `notice` VALUES ('150', '70', '71', 'add_friend', '{\"postscript\":\"\\u6211\\u662f17773589999\"}', 'agree', '1596172242');
+INSERT INTO `notice` VALUES ('151', '84', '82', 'add_friend', '{\"postscript\":\"\\u6211\\u662f17773584219\"}', 'not_operated', '1596294234');
 
 -- ----------------------------
 -- Table structure for setting
@@ -313,9 +299,7 @@ CREATE TABLE `setting` (
 -- ----------------------------
 -- Records of setting
 -- ----------------------------
-BEGIN;
-INSERT INTO `setting` (`id`, `voice`, `audio`, `video`, `prompt_tone`, `group_chat`, `private_chat`, `add_friend`, `create_group`, `upload_file`, `upload_img`, `emoji`, `dirty_words`, `stranger_chat`, `appkey`, `ws_address`, `appsecret`, `api_address`, `gf_url`, `gf_name`, `gf_img`, `gf_text1`, `gf_text2`) VALUES (3, 'on', 'off', 'off', 'on', 'on', 'on', 'on', 'on', 'on', 'on', 'on', '妈\n', 'on', '5f88825c28c56763eb0d8b270646e4b1', 'wss://uub.zgshiyou.com:443', 'a2a906fe997867135886e5c4f62b03d2', 'http://127.0.0.1:2060', 'https://www.baidu.com/img/dong_66cae51456b9983a890610875e89183c.gif', '官方', 'https://uub.zgshiyou.com/icon.png', '系统通知', '企业认证证书');
-COMMIT;
+INSERT INTO `setting` VALUES ('3', 'on', 'off', 'off', 'on', 'on', 'on', 'on', 'on', 'on', 'on', 'on', '妈\n', 'on', '5f88825c28c56763eb0d8b270646e4b1', 'wss://uub.zgshiyou.com:443', 'a2a906fe997867135886e5c4f62b03d2', 'http://127.0.0.1:2060', 'https://www.baidu.com/img/dong_66cae51456b9983a890610875e89183c.gif', '官方', 'https://uub.zgshiyou.com/icon.png', '系统通知', '企业认证证书');
 
 -- ----------------------------
 -- Table structure for user
@@ -339,31 +323,29 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-BEGIN;
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (85, '17773584200', '17773584200', '/static/avatar.jpg', '', '9dac764af5a368638bd37850e7d60938', 'offline', 0, 1596299507, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (84, '17773584219', '17773584219', '/static/avatar.jpg', '12121', '49f01268504efaef12dae66db05a0e49', 'offline', 0, 1596294207, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (83, '17773594218', '17773594218', '/static/avatar.jpg', '', 'b5ac9ac2d86142aab20e9e136d98076f', 'offline', 0, 1596294189, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (82, '17773584218', '17773584218', '/static/avatar.jpg', '', '0bb9fc760216938056c9150f244a9706', 'offline', 0, 1596294167, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (81, '17109376400', '大哥', '/static/avatar.jpg', '', 'dd42a36498cdf070547efe27e14462a2', 'offline', 0, 1596269385, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (80, '17109376401', 'TT', '/static/avatar.jpg', '', '3ff9d88e779c8d123205a2765b266c58', 'offline', 0, 1596269215, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (79, '13139185332', 'kuck', '/static/avatar.jpg', '', '53fedc8ccdd8b0ec8bf492e3e1c80246', 'offline', 0, 1596253774, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (78, '17773594212', '17773594212', '/static/avatar.jpg', '', 'df043175e96b17c0394f2fa67a6328c5', 'offline', 0, 1596182263, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (77, '13334344545', '13334344545', '/static/avatar.jpg', '', 'c8f0cee709476bb420ade164fb4623b0', 'offline', 0, 1596181160, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (76, '17778788787', '17778788787', '/static/avatar.jpg', '', '3436c2b1ffbf2a7d9360090408cff464', 'offline', 0, 1596181087, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (75, '17778988765', 'i i', '/static/avatar.jpg', 'nick', '197da8ced2b4f8a004ef4ca7bcb27508', 'offline', 0, 1596174832, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (74, '16865446785', '16865446785', '/static/avatar.jpg', '', 'cd57d8577de8d7f335a49dfdf6c09e87', 'offline', 0, 1596174799, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (73, '17735689658', '17735689658', '/static/avatar.jpg', '', '9d86763cbbf10f15531cb66484c3ab4c', 'offline', 0, 1596174652, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (72, '17773581111', '17773581111', '//uub.zgshiyou.com/upload/avatars/72/72/315f23a9929d20.png', '', 'b771d7eb730dd2bcc5e93c5a9c31dd02', 'offline', 0, 1596172664, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (71, '18878909877', '18878909877', '/static/avatar.jpg', '', '6b21f0314bb5c030430c1fb2e2da1235', 'offline', 0, 1596172157, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (70, '17773589999', 'lwk', '//uub.zgshiyou.com/upload/avatars/70/70/315f23a8ef206f.png', '1212', 'cffd45d818fbc40465434fc55dc5c0ca', 'offline', 0, 1596169094, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (68, '17109294263', 'TTtaohua', '/static/avatar.jpg', '', '21d49435bbcd054ee6dfdfdc8ef17426', 'offline', 0, 1596012810, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (69, '17773588888', '17773588888', '/static/avatar.jpg', '', '14c57bca984c6232188e7c0bb79855d1', 'offline', 0, 1596169059, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (62, '18276881118', '一桶金', '/static/avatar.jpg', '', 'b23f3e33f792ead276421a821faaf7a8', 'offline', 0, 1595860352, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (67, '17109294482', 'fhnnvvb', '/static/avatar.jpg', '', '0d560a1805f23665ce32fa93a609e74c', 'offline', 0, 1596012373, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (66, '17109294517', '天涯', '/static/avatar.jpg', '', '7f7347d26898cf48cba97c3cfe8e6b03', 'offline', 0, 1596011507, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (65, '13547416516', '摩托佬', '/static/avatar.jpg', '', 'd2bd3ad8caf78e7722448098c32645a9', 'offline', 0, 1595915588, 'normal');
-INSERT INTO `user` (`uid`, `username`, `nickname`, `avatar`, `sign`, `password`, `state`, `logout_timestamp`, `timestamp`, `account_state`) VALUES (64, '13509357182', '25888', '/static/avatar.jpg', '', '0ece1ecf403cf9c1a0ea5a112d366289', 'offline', 0, 1595863435, 'normal');
-COMMIT;
+INSERT INTO `user` VALUES ('85', '17773584200', '17773584200', '/static/avatar.jpg', '', '9dac764af5a368638bd37850e7d60938', 'offline', '0', '1596299507', 'normal');
+INSERT INTO `user` VALUES ('84', '17773584219', '17773584219', '/static/avatar.jpg', '12121', '49f01268504efaef12dae66db05a0e49', 'offline', '0', '1596294207', 'normal');
+INSERT INTO `user` VALUES ('83', '17773594218', '17773594218', '/static/avatar.jpg', '', 'b5ac9ac2d86142aab20e9e136d98076f', 'offline', '0', '1596294189', 'normal');
+INSERT INTO `user` VALUES ('82', '17773584218', '17773584218', '/static/avatar.jpg', '', '0bb9fc760216938056c9150f244a9706', 'offline', '0', '1596294167', 'normal');
+INSERT INTO `user` VALUES ('81', '17109376400', '大哥', '/static/avatar.jpg', '', 'dd42a36498cdf070547efe27e14462a2', 'offline', '0', '1596269385', 'normal');
+INSERT INTO `user` VALUES ('80', '17109376401', 'TT', '/static/avatar.jpg', '', '3ff9d88e779c8d123205a2765b266c58', 'offline', '0', '1596269215', 'normal');
+INSERT INTO `user` VALUES ('79', '13139185332', 'kuck', '/static/avatar.jpg', '', '53fedc8ccdd8b0ec8bf492e3e1c80246', 'offline', '0', '1596253774', 'normal');
+INSERT INTO `user` VALUES ('78', '17773594212', '17773594212', '/static/avatar.jpg', '', 'df043175e96b17c0394f2fa67a6328c5', 'offline', '0', '1596182263', 'normal');
+INSERT INTO `user` VALUES ('77', '13334344545', '13334344545', '/static/avatar.jpg', '', 'c8f0cee709476bb420ade164fb4623b0', 'offline', '0', '1596181160', 'normal');
+INSERT INTO `user` VALUES ('76', '17778788787', '17778788787', '/static/avatar.jpg', '', '3436c2b1ffbf2a7d9360090408cff464', 'offline', '0', '1596181087', 'normal');
+INSERT INTO `user` VALUES ('75', '17778988765', 'i i', '/static/avatar.jpg', 'nick', '197da8ced2b4f8a004ef4ca7bcb27508', 'offline', '0', '1596174832', 'normal');
+INSERT INTO `user` VALUES ('74', '16865446785', '16865446785', '/static/avatar.jpg', '', 'cd57d8577de8d7f335a49dfdf6c09e87', 'offline', '0', '1596174799', 'normal');
+INSERT INTO `user` VALUES ('73', '17735689658', '17735689658', '/static/avatar.jpg', '', '9d86763cbbf10f15531cb66484c3ab4c', 'offline', '0', '1596174652', 'normal');
+INSERT INTO `user` VALUES ('72', '17773581111', '17773581111', '//uub.zgshiyou.com/upload/avatars/72/72/315f23a9929d20.png', '', 'b771d7eb730dd2bcc5e93c5a9c31dd02', 'offline', '0', '1596172664', 'normal');
+INSERT INTO `user` VALUES ('71', '18878909877', '18878909877', '/static/avatar.jpg', '', '6b21f0314bb5c030430c1fb2e2da1235', 'offline', '0', '1596172157', 'normal');
+INSERT INTO `user` VALUES ('70', '17773589999', 'lwk', '//uub.zgshiyou.com/upload/avatars/70/70/315f23a8ef206f.png', '1212', 'cffd45d818fbc40465434fc55dc5c0ca', 'offline', '0', '1596169094', 'normal');
+INSERT INTO `user` VALUES ('68', '17109294263', 'TTtaohua', '/static/avatar.jpg', '', '21d49435bbcd054ee6dfdfdc8ef17426', 'offline', '0', '1596012810', 'normal');
+INSERT INTO `user` VALUES ('69', '17773588888', '17773588888', '/static/avatar.jpg', '', '14c57bca984c6232188e7c0bb79855d1', 'offline', '0', '1596169059', 'normal');
+INSERT INTO `user` VALUES ('62', '18276881118', '一桶金', '/static/avatar.jpg', '', 'b23f3e33f792ead276421a821faaf7a8', 'offline', '0', '1595860352', 'normal');
+INSERT INTO `user` VALUES ('67', '17109294482', 'fhnnvvb', '/static/avatar.jpg', '', '0d560a1805f23665ce32fa93a609e74c', 'offline', '0', '1596012373', 'normal');
+INSERT INTO `user` VALUES ('66', '17109294517', '天涯', '/static/avatar.jpg', '', '7f7347d26898cf48cba97c3cfe8e6b03', 'offline', '0', '1596011507', 'normal');
+INSERT INTO `user` VALUES ('65', '13547416516', '摩托佬', '/static/avatar.jpg', '', 'd2bd3ad8caf78e7722448098c32645a9', 'offline', '0', '1595915588', 'normal');
+INSERT INTO `user` VALUES ('64', '13509357182', '25888', '/static/avatar.jpg', '', '0ece1ecf403cf9c1a0ea5a112d366289', 'offline', '0', '1595863435', 'normal');
 
 -- ----------------------------
 -- Table structure for wp_allot
@@ -384,8 +366,6 @@ CREATE TABLE `wp_allot` (
 -- ----------------------------
 -- Records of wp_allot
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_area
@@ -403,8 +383,6 @@ CREATE TABLE `wp_area` (
 -- ----------------------------
 -- Records of wp_area
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_balance
@@ -434,8 +412,6 @@ CREATE TABLE `wp_balance` (
 -- ----------------------------
 -- Records of wp_balance
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_bankcard
@@ -460,8 +436,6 @@ CREATE TABLE `wp_bankcard` (
 -- ----------------------------
 -- Records of wp_bankcard
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_bankinfo
@@ -480,21 +454,6 @@ CREATE TABLE `wp_bankinfo` (
 -- ----------------------------
 -- Records of wp_bankinfo
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (8, 1058740, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230414/20230414080312426.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (9, 1058738, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230414/20230414081056985.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (10, 1058742, 'USDT', 'TVu6hntyS7zTr4TTxoR1BvHpVDkzpdzBQP', '/public/uploads/20230414/20230414095128847.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (11, 1058737, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230414/20230414235006821.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (12, 1058741, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230415/20230415015653556.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (13, 1058744, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230415/20230415020607206.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (14, 1058745, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230415/20230415022241735.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (15, 1058747, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230416/20230416015517249.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (16, 1058746, 'USDT', 'TVu6hntyS7zTr4TTxoR1BvHpVDkzpdzBQP', '/public/uploads/20230416/20230416092747704.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (17, 1058753, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230417/20230417084035107.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (18, 1058754, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230417/20230417092809108.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (19, 1058756, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230419/20230419005058591.jpeg', 0);
-INSERT INTO `wp_bankinfo` (`id`, `uid`, `name`, `address`, `qrcode`, `isdelete`) VALUES (20, 1058759, 'USDT', 'TRVk7TA47Pt28MaBbk6VZGqUKYj3SPzBQP', '/public/uploads/20230420/20230420221855861.jpeg', 0);
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_banks
@@ -510,45 +469,43 @@ CREATE TABLE `wp_banks` (
 -- ----------------------------
 -- Records of wp_banks
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (1, 102, '中国工商银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (2, 103, '中国农业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (3, 104, '中国银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (4, 105, '中国建设银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (5, 301, '交通银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (6, 308, '招商银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (7, 309, '兴业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (8, 305, '中国民生银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (9, 306, '广东发展银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (10, 307, '平安银行股份有限');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (11, 310, '上海浦东发展银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (12, 304, '华夏银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (13, 313, '其他城市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (14, 1401, '邯郸市城市信用社');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (15, 314, '其他农村商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (16, 315, '恒丰银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (17, 403, '中国邮政储蓄银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (18, 303, '中国光大银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (19, 302, '中信银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (20, 316, '浙商银行股份有限');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (21, 318, '渤海银行股份有限');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (22, 423, '杭州市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (23, 412, '温州市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (24, 424, '南京市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (25, 461, '长沙市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (26, 409, '济南市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (27, 422, '石家庄市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (28, 458, '西宁市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (29, 404, '烟台市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (30, 462, '潍坊市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (31, 515, '德州市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (32, 431, '临沂市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (33, 481, '威海商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (34, 497, '莱芜市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (35, 450, '青岛市商业银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (36, 319, '徽商银行');
-INSERT INTO `wp_banks` (`id`, `bank_no`, `bank_nm`) VALUES (37, 322, '上海农村商业银行');
-COMMIT;
+INSERT INTO `wp_banks` VALUES ('1', '102', '中国工商银行');
+INSERT INTO `wp_banks` VALUES ('2', '103', '中国农业银行');
+INSERT INTO `wp_banks` VALUES ('3', '104', '中国银行');
+INSERT INTO `wp_banks` VALUES ('4', '105', '中国建设银行');
+INSERT INTO `wp_banks` VALUES ('5', '301', '交通银行');
+INSERT INTO `wp_banks` VALUES ('6', '308', '招商银行');
+INSERT INTO `wp_banks` VALUES ('7', '309', '兴业银行');
+INSERT INTO `wp_banks` VALUES ('8', '305', '中国民生银行');
+INSERT INTO `wp_banks` VALUES ('9', '306', '广东发展银行');
+INSERT INTO `wp_banks` VALUES ('10', '307', '平安银行股份有限');
+INSERT INTO `wp_banks` VALUES ('11', '310', '上海浦东发展银行');
+INSERT INTO `wp_banks` VALUES ('12', '304', '华夏银行');
+INSERT INTO `wp_banks` VALUES ('13', '313', '其他城市商业银行');
+INSERT INTO `wp_banks` VALUES ('14', '1401', '邯郸市城市信用社');
+INSERT INTO `wp_banks` VALUES ('15', '314', '其他农村商业银行');
+INSERT INTO `wp_banks` VALUES ('16', '315', '恒丰银行');
+INSERT INTO `wp_banks` VALUES ('17', '403', '中国邮政储蓄银行');
+INSERT INTO `wp_banks` VALUES ('18', '303', '中国光大银行');
+INSERT INTO `wp_banks` VALUES ('19', '302', '中信银行');
+INSERT INTO `wp_banks` VALUES ('20', '316', '浙商银行股份有限');
+INSERT INTO `wp_banks` VALUES ('21', '318', '渤海银行股份有限');
+INSERT INTO `wp_banks` VALUES ('22', '423', '杭州市商业银行');
+INSERT INTO `wp_banks` VALUES ('23', '412', '温州市商业银行');
+INSERT INTO `wp_banks` VALUES ('24', '424', '南京市商业银行');
+INSERT INTO `wp_banks` VALUES ('25', '461', '长沙市商业银行');
+INSERT INTO `wp_banks` VALUES ('26', '409', '济南市商业银行');
+INSERT INTO `wp_banks` VALUES ('27', '422', '石家庄市商业银行');
+INSERT INTO `wp_banks` VALUES ('28', '458', '西宁市商业银行');
+INSERT INTO `wp_banks` VALUES ('29', '404', '烟台市商业银行');
+INSERT INTO `wp_banks` VALUES ('30', '462', '潍坊市商业银行');
+INSERT INTO `wp_banks` VALUES ('31', '515', '德州市商业银行');
+INSERT INTO `wp_banks` VALUES ('32', '431', '临沂市商业银行');
+INSERT INTO `wp_banks` VALUES ('33', '481', '威海商业银行');
+INSERT INTO `wp_banks` VALUES ('34', '497', '莱芜市商业银行');
+INSERT INTO `wp_banks` VALUES ('35', '450', '青岛市商业银行');
+INSERT INTO `wp_banks` VALUES ('36', '319', '徽商银行');
+INSERT INTO `wp_banks` VALUES ('37', '322', '上海农村商业银行');
 
 -- ----------------------------
 -- Table structure for wp_blacklist
@@ -564,8 +521,6 @@ CREATE TABLE `wp_blacklist` (
 -- ----------------------------
 -- Records of wp_blacklist
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_cardinfo
@@ -589,16 +544,14 @@ CREATE TABLE `wp_cardinfo` (
 -- ----------------------------
 -- Records of wp_cardinfo
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_cardinfo` (`id`, `uid`, `id_type`, `name`, `card_id`, `front_pic`, `reverse_pic`, `ctime`, `is_check`, `up_check`, `utime`) VALUES (7, 1058738, 0, '李可可', '608839198906123345', '', '', '1681447920', 2, 0, NULL);
-INSERT INTO `wp_cardinfo` (`id`, `uid`, `id_type`, `name`, `card_id`, `front_pic`, `reverse_pic`, `ctime`, `is_check`, `up_check`, `utime`) VALUES (8, 1058741, 0, '李思涵', '5167649762199', '', '', '1681472066', 2, 0, NULL);
-INSERT INTO `wp_cardinfo` (`id`, `uid`, `id_type`, `name`, `card_id`, `front_pic`, `reverse_pic`, `ctime`, `is_check`, `up_check`, `utime`) VALUES (9, 1058742, 0, '李可可', '604534198906127783', '', '', '1681472173', 2, 0, NULL);
-INSERT INTO `wp_cardinfo` (`id`, `uid`, `id_type`, `name`, `card_id`, `front_pic`, `reverse_pic`, `ctime`, `is_check`, `up_check`, `utime`) VALUES (10, 1058744, 0, '李思涵', '142106302151', '', '', '1681538381', 2, 0, NULL);
-INSERT INTO `wp_cardinfo` (`id`, `uid`, `id_type`, `name`, `card_id`, `front_pic`, `reverse_pic`, `ctime`, `is_check`, `up_check`, `utime`) VALUES (11, 1058745, 0, '李思很', '11963600852058', '', '', '1681539692', 2, 0, NULL);
-INSERT INTO `wp_cardinfo` (`id`, `uid`, `id_type`, `name`, `card_id`, `front_pic`, `reverse_pic`, `ctime`, `is_check`, `up_check`, `utime`) VALUES (12, 1058747, 0, 'Joanna', '525462752454416573', '/public/uploads/20230416/20230416015930808.jpeg', '/public/uploads/20230416/20230416015942277.jpeg', '1681624720', 2, 2, '1681624784');
-INSERT INTO `wp_cardinfo` (`id`, `uid`, `id_type`, `name`, `card_id`, `front_pic`, `reverse_pic`, `ctime`, `is_check`, `up_check`, `utime`) VALUES (13, 1058746, 0, '李可可', '763648198906123356', '', '', '1681651619', 2, 0, NULL);
-INSERT INTO `wp_cardinfo` (`id`, `uid`, `id_type`, `name`, `card_id`, `front_pic`, `reverse_pic`, `ctime`, `is_check`, `up_check`, `utime`) VALUES (14, 1058753, 0, '乔安娜', '440300 ABCD EF GH IJK L', '/public/uploads/20230417/20230417090558656.jpeg', '/public/uploads/20230417/20230417090603424.jpeg', '1681702489', 2, 2, '1681702565');
-COMMIT;
+INSERT INTO `wp_cardinfo` VALUES ('7', '1058738', '0', '李可可', '608839198906123345', '', '', '1681447920', '2', '0', null);
+INSERT INTO `wp_cardinfo` VALUES ('8', '1058741', '0', '李思涵', '5167649762199', '', '', '1681472066', '2', '0', null);
+INSERT INTO `wp_cardinfo` VALUES ('9', '1058742', '0', '李可可', '604534198906127783', '', '', '1681472173', '2', '0', null);
+INSERT INTO `wp_cardinfo` VALUES ('10', '1058744', '0', '李思涵', '142106302151', '', '', '1681538381', '2', '0', null);
+INSERT INTO `wp_cardinfo` VALUES ('11', '1058745', '0', '李思很', '11963600852058', '', '', '1681539692', '2', '0', null);
+INSERT INTO `wp_cardinfo` VALUES ('12', '1058747', '0', 'Joanna', '525462752454416573', '/public/uploads/20230416/20230416015930808.jpeg', '/public/uploads/20230416/20230416015942277.jpeg', '1681624720', '2', '2', '1681624784');
+INSERT INTO `wp_cardinfo` VALUES ('13', '1058746', '0', '李可可', '763648198906123356', '', '', '1681651619', '2', '0', null);
+INSERT INTO `wp_cardinfo` VALUES ('14', '1058753', '0', '乔安娜', '440300 ABCD EF GH IJK L', '/public/uploads/20230417/20230417090558656.jpeg', '/public/uploads/20230417/20230417090603424.jpeg', '1681702489', '2', '2', '1681702565');
 
 -- ----------------------------
 -- Table structure for wp_catproduct
@@ -621,8 +574,6 @@ CREATE TABLE `wp_catproduct` (
 -- ----------------------------
 -- Records of wp_catproduct
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_conf
@@ -654,9 +605,7 @@ CREATE TABLE `wp_conf` (
 -- ----------------------------
 -- Records of wp_conf
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_conf` (`id`, `webname`, `onelive`, `twolive`, `threelive`, `pagenum`, `closswebcon`, `webisopen`, `daygiveint`, `inttomoney`, `ordermin`, `ordermax`, `cashmin`, `cashmax`, `rechargemin`, `rechargemax`, `usermaxrecharge`, `festivalisrec`, `userallhold`) VALUES (1, '软盟微交易系统V2.0演示版', 3.00, 2.00, 1.00, 20, '网站升级维护中……', 1, 100, '100:1', 20.00, 1000.00, 100.00, 1000.00, 20.00, 1000.00, 1000.00, 0, 2000.00);
-COMMIT;
+INSERT INTO `wp_conf` VALUES ('1', '软盟微交易系统V2.0演示版', '3.00', '2.00', '1.00', '20', '网站升级维护中……', '1', '100', '100:1', '20.00', '1000.00', '100.00', '1000.00', '20.00', '1000.00', '1000.00', '0', '2000.00');
 
 -- ----------------------------
 -- Table structure for wp_config
@@ -684,63 +633,61 @@ CREATE TABLE `wp_config` (
 -- ----------------------------
 -- Records of wp_config
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (1, 'web_name', 1, '网站名称', 1, '', '', 1509027150, 1509027150, 1, 'Hantec', 1);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (2, 'is_close', 1, '网站是否关闭', 1, '0关闭，1开启', '', 1498580751, 1498580751, 0, '1', 9);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (3, 'is_reg', 1, '是否开放用户注册', 2, '1开启注册0关闭注册', '', 1498580857, 1498580857, 1, '1', 1);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (4, 'web_poundage', 1, '每笔平台收取手续费', 2, '如：2%，就填写2即可', '', 1498580887, 1498580887, 1, '0', 2);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (5, 'day_cash', 1, '每日最多提现次数', 2, '', '', 1499137504, 1499137504, 1, '3', 12);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (6, 'live_num', 1, '平台分销级数', 2, '', '', 1498580962, 1498580962, 0, '5', 4);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (7, 'pay_choose', 1, '投资金额', 2, '以 | 符号隔开', '', 1498581030, 1498581030, 1, '100|1000|5000|10000|20000|30000|50000', 5);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (8, 'order_min_price', 1, '单笔最低下单金额', 2, '', '', 1504767331, 1504767331, 1, '50', 6);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (9, 'order_max_price', 1, '单笔最高下单金额', 2, '', '', 1504767338, 1504767338, 1, '100000000', 7);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (10, 'reg_par', 1, '每笔提现手续费', 2, '输入百分比，如2%就输入2', '', 1499132509, 1499132509, 1, '0', 8);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (11, 'cash_min', 1, '最低提现金额', 2, '', '', 1499132653, 1499132653, 1, '10', 9);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (12, 'cash_max', 1, '单笔提现最大金额', 2, '', '', 1499132757, 1499132757, 1, '5000000', 10);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (13, 'cash_day_max', 1, '当日累计最高提现金额', 2, '', '', 1499138112, 1499138112, 1, '100000000', 11);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (14, 'is_cash', 1, '是否开启提现', 2, '1开启0关闭', '', 1499138225, 1499138225, 1, '1', 15);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (15, 'msm_SignName', 1, '短信签名', 1, '', '', 1499259617, 1499259617, 0, '中泰国际', 3);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (16, 'msm_appkey', 1, '短信key', 1, '', '', 1499259639, 1499259639, 0, '短信宝用户名', 4);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (17, 'msm_secretkey', 1, '短信秘钥', 1, '', '', 1499259659, 1499259659, 0, '短信宝密码', 6);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (18, 'msm_TCode', 1, '短信模板', 1, '', '', 1499259682, 1499259682, 0, '', 7);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (19, 'allot_point', 1, '代理红利分配比例', 2, '百分比，80%输入80。平仓后按照下单价格乘以此比例进行对冲 ', '', 1500304738, 1500304738, 0, '100', 16);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (20, 'yongjin_point', 1, '代理佣金分配比例', 2, '百分比，10%输入10。平仓后按照下单价格乘以此比例为手续费奖励给代理团队', '', 1500304746, 1500304746, 0, '10', 17);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (21, 'reg_type', 1, '注册是否需要激活', 2, '1不需激活2需要激活', '', 1502335131, 1502335131, 0, '1', 21);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (22, 'kong_end', 1, '订单受风控时间', 2, '输入10-15，则订单在平仓之前10-15秒开始受到风控影响。', '', 1514738027, 1514738027, 1, '8-12', 28);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (23, 'userpay_max', 1, '单笔最大入金', 2, '', '', 1504678164, 1504678164, 1, '10000000', 28);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (24, 'userpay_min', 1, '单笔最小入金', 2, '', '', 1504678193, 1504678193, 1, '50', 29);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (25, 'max_order_count', 1, '最大持仓单数', 2, '', '', 1504770831, 1504770831, 1, '100', 7);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (26, 'web_logo', 3, 'LOGO，PNG格式', 1, '', '', 1506779011, 1506779011, 1, '/public/uploads/20230413/20230413125509158.png', 10);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (27, 'sys_kefu', 1, '在线客服', 1, '', '', 1506779458, 1506779458, 1, 'https://hantec22.com/kefu/php/app.php?widget-mobile', 8);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (28, 'reg_push', 1, '充值金额', 2, '用|隔开', '', 1506779553, 1506779553, 1, '100|500|1000|5000|10000|12000', 30);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (29, 'can_kong', 1, '可单控用户', 3, '0009598,25,3,130', '', 1535033268, 1535033268, 1, '', 40);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (30, 'role_ks', 1, '开始提现时间', 2, '在指定的时间段可以提现 例：9:00', '', 1553020924, 1553020924, 1, '00:00', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (31, 'role_js', 1, '结束提现时间', 2, '在指定的时间段可以提现 例：22:00', '', 1553021039, 1553021039, 1, '23:59', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (33, 'sys_limit', 1, '超过警戒线是否平仓', 2, '1是0否', '', 0, 0, 0, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (34, 'sys_luhn_card', 1, '银行卡号校验', 2, '1是0否', '', 0, 0, 0, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (35, 'sys_app_url', 1, 'APP链接URL', 2, '', '', 0, 0, 0, '', 41);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (37, 'sys_truename', 1, '姓名注册开关', 2, '1开 0关', '', 0, 0, 0, '1', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (38, 'sys_mobile', 1, '手机注册开关', 2, '1开 0关', '', 0, 0, 0, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (39, 'sys_invit', 1, '推荐码注册开关', 2, '1开 0关', '', 0, 0, 0, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (40, 'sys_rates', 1, '利息宝开关', 2, '1开 0关', '', 0, 0, 0, '1', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (41, 'sys_jifen', 1, '积分开关', 2, '1开 0关', '', 0, 0, 0, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (42, 'sys_pingcang', 1, '手动平仓开关', 2, '1开 0关', '', 0, 0, 1, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (43, 'sys_reg_caijin', 1, '注册送彩金', 2, '放空或0，即不送', '', 0, 0, 1, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (44, 'sys_log_caijin', 1, '每天首登送彩金', 2, '放空或0，即不送', '', 0, 0, 0, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (45, 'sys_homepage', 1, '首页切换', 2, '1或者2', '', 0, 0, 0, '2', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (46, 'sys_kefu_name', 1, '客服名称', 3, '客服名', '', 0, 0, 1, '小美', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (47, 'sys_kefu_img', 3, '客服头像', 3, '客服头像', '', 0, 0, 1, '\\public\\jpg\\kefu_img.png', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (48, 'sys_greeting', 2, '客服问候', 3, '客服问候', '', 0, 0, 1, '您好，请问有什么需要帮助的~~', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (49, 'sys_buy_once', 1, '单一待结算订单', 2, '1开 0关 （仅能一笔待结算订单）', '', 0, 0, 0, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (50, 'sys_hide_yingkui', 1, '隐藏止盈止损', 2, '1开 0关', '', 0, 0, 0, '1', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (51, 'sys_robot', 1, '机器人赢利', 2, '1显示 0隐藏', '', 0, 0, 0, '0', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (52, 'sys_yue_benjin', 1, '利息宝本金', 2, '1不冻结，可下注，不可提现 2本金冻结，不下注不提现', '', 0, 0, 0, '2', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (53, 'register_id', 1, '身份证注册开关', 2, '1开 0关', '', 0, 0, 0, '1', 0);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (54, 'whatsapp_kefu', 1, 'WhatsApp客服', 1, '', '', 1506779458, 1506779458, 1, 'https://wa.me/85290281194', 8);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (57, 'income_hidden', 1, '收益率开关', 2, '1开 0关', '', 1506779458, 1506779458, 1, '0', 8);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (58, 'iosapp', 4, 'IOS App', 1, '', '', 1506779011, 1506779011, 1, '', 10);
-INSERT INTO `wp_config` (`id`, `name`, `type`, `title`, `group`, `extra`, `remark`, `create_time`, `update_time`, `status`, `value`, `sort`) VALUES (59, 'androidapp', 4, 'Android App', 1, '', '', 1506779011, 1506779011, 1, '', 10);
-COMMIT;
+INSERT INTO `wp_config` VALUES ('1', 'web_name', '1', '网站名称', '1', '', '', '1509027150', '1509027150', '1', 'Hantec', '1');
+INSERT INTO `wp_config` VALUES ('2', 'is_close', '1', '网站是否关闭', '1', '0关闭，1开启', '', '1498580751', '1498580751', '0', '1', '9');
+INSERT INTO `wp_config` VALUES ('3', 'is_reg', '1', '是否开放用户注册', '2', '1开启注册0关闭注册', '', '1498580857', '1498580857', '1', '1', '1');
+INSERT INTO `wp_config` VALUES ('4', 'web_poundage', '1', '每笔平台收取手续费', '2', '如：2%，就填写2即可', '', '1498580887', '1498580887', '1', '0', '2');
+INSERT INTO `wp_config` VALUES ('5', 'day_cash', '1', '每日最多提现次数', '2', '', '', '1499137504', '1499137504', '1', '3', '12');
+INSERT INTO `wp_config` VALUES ('6', 'live_num', '1', '平台分销级数', '2', '', '', '1498580962', '1498580962', '0', '5', '4');
+INSERT INTO `wp_config` VALUES ('7', 'pay_choose', '1', '投资金额', '2', '以 | 符号隔开', '', '1498581030', '1498581030', '1', '100|1000|5000|10000|20000|30000|50000', '5');
+INSERT INTO `wp_config` VALUES ('8', 'order_min_price', '1', '单笔最低下单金额', '2', '', '', '1504767331', '1504767331', '1', '50', '6');
+INSERT INTO `wp_config` VALUES ('9', 'order_max_price', '1', '单笔最高下单金额', '2', '', '', '1504767338', '1504767338', '1', '100000000', '7');
+INSERT INTO `wp_config` VALUES ('10', 'reg_par', '1', '每笔提现手续费', '2', '输入百分比，如2%就输入2', '', '1499132509', '1499132509', '1', '0', '8');
+INSERT INTO `wp_config` VALUES ('11', 'cash_min', '1', '最低提现金额', '2', '', '', '1499132653', '1499132653', '1', '10', '9');
+INSERT INTO `wp_config` VALUES ('12', 'cash_max', '1', '单笔提现最大金额', '2', '', '', '1499132757', '1499132757', '1', '5000000', '10');
+INSERT INTO `wp_config` VALUES ('13', 'cash_day_max', '1', '当日累计最高提现金额', '2', '', '', '1499138112', '1499138112', '1', '100000000', '11');
+INSERT INTO `wp_config` VALUES ('14', 'is_cash', '1', '是否开启提现', '2', '1开启0关闭', '', '1499138225', '1499138225', '1', '1', '15');
+INSERT INTO `wp_config` VALUES ('15', 'msm_SignName', '1', '短信签名', '1', '', '', '1499259617', '1499259617', '0', '中泰国际', '3');
+INSERT INTO `wp_config` VALUES ('16', 'msm_appkey', '1', '短信key', '1', '', '', '1499259639', '1499259639', '0', '短信宝用户名', '4');
+INSERT INTO `wp_config` VALUES ('17', 'msm_secretkey', '1', '短信秘钥', '1', '', '', '1499259659', '1499259659', '0', '短信宝密码', '6');
+INSERT INTO `wp_config` VALUES ('18', 'msm_TCode', '1', '短信模板', '1', '', '', '1499259682', '1499259682', '0', '', '7');
+INSERT INTO `wp_config` VALUES ('19', 'allot_point', '1', '代理红利分配比例', '2', '百分比，80%输入80。平仓后按照下单价格乘以此比例进行对冲 ', '', '1500304738', '1500304738', '0', '100', '16');
+INSERT INTO `wp_config` VALUES ('20', 'yongjin_point', '1', '代理佣金分配比例', '2', '百分比，10%输入10。平仓后按照下单价格乘以此比例为手续费奖励给代理团队', '', '1500304746', '1500304746', '0', '10', '17');
+INSERT INTO `wp_config` VALUES ('21', 'reg_type', '1', '注册是否需要激活', '2', '1不需激活2需要激活', '', '1502335131', '1502335131', '0', '1', '21');
+INSERT INTO `wp_config` VALUES ('22', 'kong_end', '1', '订单受风控时间', '2', '输入10-15，则订单在平仓之前10-15秒开始受到风控影响。', '', '1514738027', '1514738027', '1', '8-12', '28');
+INSERT INTO `wp_config` VALUES ('23', 'userpay_max', '1', '单笔最大入金', '2', '', '', '1504678164', '1504678164', '1', '10000000', '28');
+INSERT INTO `wp_config` VALUES ('24', 'userpay_min', '1', '单笔最小入金', '2', '', '', '1504678193', '1504678193', '1', '50', '29');
+INSERT INTO `wp_config` VALUES ('25', 'max_order_count', '1', '最大持仓单数', '2', '', '', '1504770831', '1504770831', '1', '100', '7');
+INSERT INTO `wp_config` VALUES ('26', 'web_logo', '3', 'LOGO，PNG格式', '1', '', '', '1506779011', '1506779011', '1', '/public/uploads/20230413/20230413125509158.png', '10');
+INSERT INTO `wp_config` VALUES ('27', 'sys_kefu', '1', '在线客服', '1', '', '', '1506779458', '1506779458', '1', 'https://hantec22.com/kefu/php/app.php?widget-mobile', '8');
+INSERT INTO `wp_config` VALUES ('28', 'reg_push', '1', '充值金额', '2', '用|隔开', '', '1506779553', '1506779553', '1', '100|500|1000|5000|10000|12000', '30');
+INSERT INTO `wp_config` VALUES ('29', 'can_kong', '1', '可单控用户', '3', '0009598,25,3,130', '', '1535033268', '1535033268', '1', '', '40');
+INSERT INTO `wp_config` VALUES ('30', 'role_ks', '1', '开始提现时间', '2', '在指定的时间段可以提现 例：9:00', '', '1553020924', '1553020924', '1', '00:00', '0');
+INSERT INTO `wp_config` VALUES ('31', 'role_js', '1', '结束提现时间', '2', '在指定的时间段可以提现 例：22:00', '', '1553021039', '1553021039', '1', '23:59', '0');
+INSERT INTO `wp_config` VALUES ('33', 'sys_limit', '1', '超过警戒线是否平仓', '2', '1是0否', '', '0', '0', '0', '0', '0');
+INSERT INTO `wp_config` VALUES ('34', 'sys_luhn_card', '1', '银行卡号校验', '2', '1是0否', '', '0', '0', '0', '0', '0');
+INSERT INTO `wp_config` VALUES ('35', 'sys_app_url', '1', 'APP链接URL', '2', '', '', '0', '0', '0', '', '41');
+INSERT INTO `wp_config` VALUES ('37', 'sys_truename', '1', '姓名注册开关', '2', '1开 0关', '', '0', '0', '0', '1', '0');
+INSERT INTO `wp_config` VALUES ('38', 'sys_mobile', '1', '手机注册开关', '2', '1开 0关', '', '0', '0', '0', '0', '0');
+INSERT INTO `wp_config` VALUES ('39', 'sys_invit', '1', '推荐码注册开关', '2', '1开 0关', '', '0', '0', '0', '0', '0');
+INSERT INTO `wp_config` VALUES ('40', 'sys_rates', '1', '利息宝开关', '2', '1开 0关', '', '0', '0', '0', '1', '0');
+INSERT INTO `wp_config` VALUES ('41', 'sys_jifen', '1', '积分开关', '2', '1开 0关', '', '0', '0', '0', '0', '0');
+INSERT INTO `wp_config` VALUES ('42', 'sys_pingcang', '1', '手动平仓开关', '2', '1开 0关', '', '0', '0', '1', '0', '0');
+INSERT INTO `wp_config` VALUES ('43', 'sys_reg_caijin', '1', '注册送彩金', '2', '放空或0，即不送', '', '0', '0', '1', '0', '0');
+INSERT INTO `wp_config` VALUES ('44', 'sys_log_caijin', '1', '每天首登送彩金', '2', '放空或0，即不送', '', '0', '0', '0', '0', '0');
+INSERT INTO `wp_config` VALUES ('45', 'sys_homepage', '1', '首页切换', '2', '1或者2', '', '0', '0', '0', '2', '0');
+INSERT INTO `wp_config` VALUES ('46', 'sys_kefu_name', '1', '客服名称', '3', '客服名', '', '0', '0', '1', '小美', '0');
+INSERT INTO `wp_config` VALUES ('47', 'sys_kefu_img', '3', '客服头像', '3', '客服头像', '', '0', '0', '1', '\\public\\jpg\\kefu_img.png', '0');
+INSERT INTO `wp_config` VALUES ('48', 'sys_greeting', '2', '客服问候', '3', '客服问候', '', '0', '0', '1', '您好，请问有什么需要帮助的~~', '0');
+INSERT INTO `wp_config` VALUES ('49', 'sys_buy_once', '1', '单一待结算订单', '2', '1开 0关 （仅能一笔待结算订单）', '', '0', '0', '0', '0', '0');
+INSERT INTO `wp_config` VALUES ('50', 'sys_hide_yingkui', '1', '隐藏止盈止损', '2', '1开 0关', '', '0', '0', '0', '1', '0');
+INSERT INTO `wp_config` VALUES ('51', 'sys_robot', '1', '机器人赢利', '2', '1显示 0隐藏', '', '0', '0', '0', '0', '0');
+INSERT INTO `wp_config` VALUES ('52', 'sys_yue_benjin', '1', '利息宝本金', '2', '1不冻结，可下注，不可提现 2本金冻结，不下注不提现', '', '0', '0', '0', '2', '0');
+INSERT INTO `wp_config` VALUES ('53', 'register_id', '1', '身份证注册开关', '2', '1开 0关', '', '0', '0', '0', '1', '0');
+INSERT INTO `wp_config` VALUES ('54', 'whatsapp_kefu', '1', 'WhatsApp客服', '1', '', '', '1506779458', '1506779458', '1', 'https://wa.me/85290281194', '8');
+INSERT INTO `wp_config` VALUES ('57', 'income_hidden', '1', '收益率开关', '2', '1开 0关', '', '1506779458', '1506779458', '1', '0', '8');
+INSERT INTO `wp_config` VALUES ('58', 'iosapp', '4', 'IOS App', '1', '', '', '1506779011', '1506779011', '1', '', '10');
+INSERT INTO `wp_config` VALUES ('59', 'androidapp', '4', 'Android App', '1', '', '', '1506779011', '1506779011', '1', '', '10');
 
 -- ----------------------------
 -- Table structure for wp_dt_productag0
@@ -769,9 +716,7 @@ CREATE TABLE `wp_dt_productag0` (
 -- ----------------------------
 -- Records of wp_dt_productag0
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_dt_productag0` (`id`, `type`, `pid`, `name`, `price`, `open`, `close`, `high`, `low`, `diff`, `diffrate`, `updatetime`, `rands`, `point`, `isdelete`) VALUES (1, 1, '23', '白银', NULL, '3730.00', '3712.00', '3739.00', '3725.00', NULL, NULL, '1526978686', NULL, NULL, 0);
-COMMIT;
+INSERT INTO `wp_dt_productag0` VALUES ('1', '1', '23', '白银', null, '3730.00', '3712.00', '3739.00', '3725.00', null, null, '1526978686', null, null, '0');
 
 -- ----------------------------
 -- Table structure for wp_gallery
@@ -789,12 +734,10 @@ CREATE TABLE `wp_gallery` (
 -- ----------------------------
 -- Records of wp_gallery
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_gallery` (`id`, `title`, `img`, `state`, `sort`) VALUES (1, '1', '/public/uploads/20230320/d52b3b4d96c3ff3c5ba07db61ec5ae4e.jpg', 1, 1);
-INSERT INTO `wp_gallery` (`id`, `title`, `img`, `state`, `sort`) VALUES (2, '2', '/public/uploads/20230320/13dbe414b56938ba1756077d168da765.jpg', 1, 2);
-INSERT INTO `wp_gallery` (`id`, `title`, `img`, `state`, `sort`) VALUES (3, '3', '/public/uploads/20230320/66d195c08cb416209f4c32c7824d160c.jpg', 1, 3);
-INSERT INTO `wp_gallery` (`id`, `title`, `img`, `state`, `sort`) VALUES (11, '1', '/public/uploads/20230328/66f55dabd04f173ca5e9a3234faa44aa.jpg', 1, 0);
-COMMIT;
+INSERT INTO `wp_gallery` VALUES ('1', '1', '/public/uploads/20230320/d52b3b4d96c3ff3c5ba07db61ec5ae4e.jpg', '1', '1');
+INSERT INTO `wp_gallery` VALUES ('2', '2', '/public/uploads/20230320/13dbe414b56938ba1756077d168da765.jpg', '1', '2');
+INSERT INTO `wp_gallery` VALUES ('3', '3', '/public/uploads/20230320/66d195c08cb416209f4c32c7824d160c.jpg', '1', '3');
+INSERT INTO `wp_gallery` VALUES ('11', '1', '/public/uploads/20230328/66f55dabd04f173ca5e9a3234faa44aa.jpg', '1', '0');
 
 -- ----------------------------
 -- Table structure for wp_integral
@@ -813,8 +756,6 @@ CREATE TABLE `wp_integral` (
 -- ----------------------------
 -- Records of wp_integral
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_invest
@@ -836,14 +777,12 @@ CREATE TABLE `wp_invest` (
 -- ----------------------------
 -- Records of wp_invest
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_invest` (`pid`, `days`, `type`, `rates`, `min`, `max`, `state`, `sort`, `proid`) VALUES (1002, 7, 2, 14.00, 100, 0, 1, 0, 56);
-INSERT INTO `wp_invest` (`pid`, `days`, `type`, `rates`, `min`, `max`, `state`, `sort`, `proid`) VALUES (1003, 14, 2, 42.00, 1000, 0, 1, 0, 56);
-INSERT INTO `wp_invest` (`pid`, `days`, `type`, `rates`, `min`, `max`, `state`, `sort`, `proid`) VALUES (1004, 30, 2, 120.00, 5000, 0, 1, 0, 56);
-INSERT INTO `wp_invest` (`pid`, `days`, `type`, `rates`, `min`, `max`, `state`, `sort`, `proid`) VALUES (1005, 45, 2, 225.00, 10000, 0, 1, 0, 56);
-INSERT INTO `wp_invest` (`pid`, `days`, `type`, `rates`, `min`, `max`, `state`, `sort`, `proid`) VALUES (1006, 60, 2, 360.00, 50000, 0, 1, 0, 56);
-INSERT INTO `wp_invest` (`pid`, `days`, `type`, `rates`, `min`, `max`, `state`, `sort`, `proid`) VALUES (1007, 90, 2, 630.00, 100000, 0, 1, 0, 56);
-COMMIT;
+INSERT INTO `wp_invest` VALUES ('1002', '7', '2', '14.00', '100', '0', '1', '0', '56');
+INSERT INTO `wp_invest` VALUES ('1003', '14', '2', '42.00', '1000', '0', '1', '0', '56');
+INSERT INTO `wp_invest` VALUES ('1004', '30', '2', '120.00', '5000', '0', '1', '0', '56');
+INSERT INTO `wp_invest` VALUES ('1005', '45', '2', '225.00', '10000', '0', '1', '0', '56');
+INSERT INTO `wp_invest` VALUES ('1006', '60', '2', '360.00', '50000', '0', '1', '0', '56');
+INSERT INTO `wp_invest` VALUES ('1007', '90', '2', '630.00', '100000', '0', '1', '0', '56');
 
 -- ----------------------------
 -- Table structure for wp_klinedata
@@ -863,8 +802,6 @@ CREATE TABLE `wp_klinedata` (
 -- ----------------------------
 -- Records of wp_klinedata
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_log
@@ -892,8 +829,6 @@ CREATE TABLE `wp_log` (
 -- ----------------------------
 -- Records of wp_log
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_newsclass
@@ -909,12 +844,10 @@ CREATE TABLE `wp_newsclass` (
 -- ----------------------------
 -- Records of wp_newsclass
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_newsclass` (`fid`, `fclass`, `isdelete`) VALUES (1, '最新资讯', 0);
-INSERT INTO `wp_newsclass` (`fid`, `fclass`, `isdelete`) VALUES (2, '财经要闻', 0);
-INSERT INTO `wp_newsclass` (`fid`, `fclass`, `isdelete`) VALUES (3, '系统公告', 1);
-INSERT INTO `wp_newsclass` (`fid`, `fclass`, `isdelete`) VALUES (4, '时政新闻', 1);
-COMMIT;
+INSERT INTO `wp_newsclass` VALUES ('1', '最新资讯', '0');
+INSERT INTO `wp_newsclass` VALUES ('2', '财经要闻', '0');
+INSERT INTO `wp_newsclass` VALUES ('3', '系统公告', '1');
+INSERT INTO `wp_newsclass` VALUES ('4', '时政新闻', '1');
 
 -- ----------------------------
 -- Table structure for wp_newsinfo
@@ -935,8 +868,6 @@ CREATE TABLE `wp_newsinfo` (
 -- ----------------------------
 -- Records of wp_newsinfo
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_notice
@@ -954,9 +885,7 @@ CREATE TABLE `wp_notice` (
 -- ----------------------------
 -- Records of wp_notice
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_notice` (`id`, `title`, `content`, `state`, `time`) VALUES (6, 'About GFF Platform Update', 'Global Financial Futuers Exchange Abbreviation GFF. GFF is the largest financial exchange in the United Kingdom - the London International Financial Futures Exchange, a company(NYSE-LIFFE), as the world\'s most diversified market leader in the line of raw instruments, handling an average of 1 billion contracts each year, worth about 100 billion U.S. dollars, GFF buyers and sellers to provide a market, linking individuals, companies or institutions that need to manage risk or willing to profit by taking risks.GFF relies on its parent company NYSE-LIFFE\'s rich experience in international trading market management, advanced technology capabilities and a wide range of investment varieties, committed to better serve international customers, mainly operating energy futures trading and foreign exchange transactions, as the latest futures trading and foreign exchange trading custody model, GFF to achieve the decentralization of blockchain technology, customers have a better experience and financial management functions. The exchange covers futures and foreign exchange trading in energy, agricultural products, natural gas and metals, providing innovative management solutions for the market and offering the most complete range of trading products and financial value-added products for customers.The exchange staff is located all over the world, with a team of professional financial analysts, professional traders, and a strong data analysis team provides a scientific approach to each different phase of trading various futures products.Through our GFF electronic trading platform, global users are able to access the most extensive and liquid financial derivatives market in the world, no matter where they are.', 1, 1679070397);
-COMMIT;
+INSERT INTO `wp_notice` VALUES ('6', 'About GFF Platform Update', 'Global Financial Futuers Exchange Abbreviation GFF. GFF is the largest financial exchange in the United Kingdom - the London International Financial Futures Exchange, a company(NYSE-LIFFE), as the world\'s most diversified market leader in the line of raw instruments, handling an average of 1 billion contracts each year, worth about 100 billion U.S. dollars, GFF buyers and sellers to provide a market, linking individuals, companies or institutions that need to manage risk or willing to profit by taking risks.GFF relies on its parent company NYSE-LIFFE\'s rich experience in international trading market management, advanced technology capabilities and a wide range of investment varieties, committed to better serve international customers, mainly operating energy futures trading and foreign exchange transactions, as the latest futures trading and foreign exchange trading custody model, GFF to achieve the decentralization of blockchain technology, customers have a better experience and financial management functions. The exchange covers futures and foreign exchange trading in energy, agricultural products, natural gas and metals, providing innovative management solutions for the market and offering the most complete range of trading products and financial value-added products for customers.The exchange staff is located all over the world, with a team of professional financial analysts, professional traders, and a strong data analysis team provides a scientific approach to each different phase of trading various futures products.Through our GFF electronic trading platform, global users are able to access the most extensive and liquid financial derivatives market in the world, no matter where they are.', '1', '1679070397');
 
 -- ----------------------------
 -- Table structure for wp_opentime
@@ -972,32 +901,30 @@ CREATE TABLE `wp_opentime` (
 -- ----------------------------
 -- Records of wp_opentime
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (49, 56, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00--');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (51, 59, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (52, 14, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (53, 23, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (54, 57, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (55, 58, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (56, 15, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (57, 38, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (58, 11, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (59, 29, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (60, 31, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (61, 35, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (62, 41, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (63, 39, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (64, 12, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (65, 16, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (66, 45, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (67, 34, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (68, 36, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (69, 32, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (70, 42, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (71, 13, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (72, 17, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-INSERT INTO `wp_opentime` (`id`, `pid`, `opentime`) VALUES (73, 22, '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
-COMMIT;
+INSERT INTO `wp_opentime` VALUES ('49', '56', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00--');
+INSERT INTO `wp_opentime` VALUES ('51', '59', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('52', '14', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('53', '23', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('54', '57', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('55', '58', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('56', '15', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('57', '38', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('58', '11', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('59', '29', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('60', '31', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('61', '35', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('62', '41', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('63', '39', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('64', '12', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('65', '16', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('66', '45', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('67', '34', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('68', '36', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('69', '32', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('70', '42', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('71', '13', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('72', '17', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
+INSERT INTO `wp_opentime` VALUES ('73', '22', '00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00-00:00~24:00---');
 
 -- ----------------------------
 -- Table structure for wp_order
@@ -1035,8 +962,6 @@ CREATE TABLE `wp_order` (
 -- ----------------------------
 -- Records of wp_order
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_order_log
@@ -1057,8 +982,6 @@ CREATE TABLE `wp_order_log` (
 -- ----------------------------
 -- Records of wp_order_log
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_payment
@@ -1081,15 +1004,13 @@ CREATE TABLE `wp_payment` (
 -- ----------------------------
 -- Records of wp_payment
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_payment` (`id`, `pay_name`, `is_use`, `pay_point`, `pay_conf`, `isdelete`, `dotime`, `pay_order`, `thumb`, `account_no`) VALUES (1, '支付宝扫码', 0, '0', 'qd_alipay2', 1, '1624425930', 0, '', '');
-INSERT INTO `wp_payment` (`id`, `pay_name`, `is_use`, `pay_point`, `pay_conf`, `isdelete`, `dotime`, `pay_order`, `thumb`, `account_no`) VALUES (2, '微信扫码', 0, '0', 'qd_wxpay2', 1, '1624094012', 0, '', '');
-INSERT INTO `wp_payment` (`id`, `pay_name`, `is_use`, `pay_point`, `pay_conf`, `isdelete`, `dotime`, `pay_order`, `thumb`, `account_no`) VALUES (3, '支付宝', 0, '0', 'mcb_alipay', 1, '1624093718', 0, '', '');
-INSERT INTO `wp_payment` (`id`, `pay_name`, `is_use`, `pay_point`, `pay_conf`, `isdelete`, `dotime`, `pay_order`, `thumb`, `account_no`) VALUES (4, '微信', 0, '0', 'mcb_wxpay', 1, '1513770276', 0, '', '');
-INSERT INTO `wp_payment` (`id`, `pay_name`, `is_use`, `pay_point`, `pay_conf`, `isdelete`, `dotime`, `pay_order`, `thumb`, `account_no`) VALUES (5, '银行卡', 0, '0', 'mcb_bankpay', 0, '1681401421', NULL, '', '');
-INSERT INTO `wp_payment` (`id`, `pay_name`, `is_use`, `pay_point`, `pay_conf`, `isdelete`, `dotime`, `pay_order`, `thumb`, `account_no`) VALUES (6, 'USDT充值', 1, '0', 'mcb_usdtpay', 0, '1681471493', NULL, '', 'trc20:TLVcMruzUJ4q9QWGK4RWXrKkUsQ8ssw3K5,erc20:0x57D8DCD8B32a10560D1F2E2767998c9E253a330A');
-INSERT INTO `wp_payment` (`id`, `pay_name`, `is_use`, `pay_point`, `pay_conf`, `isdelete`, `dotime`, `pay_order`, `thumb`, `account_no`) VALUES (7, '在线充值', 0, '0', 'mcb_visapay', 0, '1681401444', NULL, '', '');
-COMMIT;
+INSERT INTO `wp_payment` VALUES ('1', '支付宝扫码', '0', '0', 'qd_alipay2', '1', '1624425930', '0', '', '');
+INSERT INTO `wp_payment` VALUES ('2', '微信扫码', '0', '0', 'qd_wxpay2', '1', '1624094012', '0', '', '');
+INSERT INTO `wp_payment` VALUES ('3', '支付宝', '0', '0', 'mcb_alipay', '1', '1624093718', '0', '', '');
+INSERT INTO `wp_payment` VALUES ('4', '微信', '0', '0', 'mcb_wxpay', '1', '1513770276', '0', '', '');
+INSERT INTO `wp_payment` VALUES ('5', '银行卡', '0', '0', 'mcb_bankpay', '0', '1681401421', null, '', '');
+INSERT INTO `wp_payment` VALUES ('6', 'USDT充值', '1', '0', 'mcb_usdtpay', '0', '1681471493', null, '', 'trc20:TLVcMruzUJ4q9QWGK4RWXrKkUsQ8ssw3K5,erc20:0x57D8DCD8B32a10560D1F2E2767998c9E253a330A');
+INSERT INTO `wp_payment` VALUES ('7', '在线充值', '0', '0', 'mcb_visapay', '0', '1681401444', null, '', '');
 
 -- ----------------------------
 -- Table structure for wp_payorder
@@ -1113,8 +1034,6 @@ CREATE TABLE `wp_payorder` (
 -- ----------------------------
 -- Records of wp_payorder
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_price_log
@@ -1136,8 +1055,6 @@ CREATE TABLE `wp_price_log` (
 -- ----------------------------
 -- Records of wp_price_log
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_productclass
@@ -1153,13 +1070,11 @@ CREATE TABLE `wp_productclass` (
 -- ----------------------------
 -- Records of wp_productclass
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_productclass` (`pcid`, `pcname`, `isdelete`) VALUES (1, '油', 1);
-INSERT INTO `wp_productclass` (`pcid`, `pcname`, `isdelete`) VALUES (2, '金属', 1);
-INSERT INTO `wp_productclass` (`pcid`, `pcname`, `isdelete`) VALUES (3, '啥的萨达是123', 1);
-INSERT INTO `wp_productclass` (`pcid`, `pcname`, `isdelete`) VALUES (4, '指数', 1);
-INSERT INTO `wp_productclass` (`pcid`, `pcname`, `isdelete`) VALUES (5, '外汇', 0);
-COMMIT;
+INSERT INTO `wp_productclass` VALUES ('1', '油', '1');
+INSERT INTO `wp_productclass` VALUES ('2', '金属', '1');
+INSERT INTO `wp_productclass` VALUES ('3', '啥的萨达是123', '1');
+INSERT INTO `wp_productclass` VALUES ('4', '指数', '1');
+INSERT INTO `wp_productclass` VALUES ('5', '外汇', '0');
 
 -- ----------------------------
 -- Table structure for wp_productdata
@@ -1190,32 +1105,30 @@ CREATE TABLE `wp_productdata` (
 -- ----------------------------
 -- Records of wp_productdata
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (9, '11', 'Brazil Index', '3.35848', '3.7199', '3.3579', '3.7783', '3.3049', '0', '0', '1682084360', '', '', 0, 1, NULL, NULL, 5);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (10, '12', 'USD CHF', '0.89071', '0.8925', '0.8951', '0.8953', '0.8906', '0', '0', '1682084360', '', '', 0, 1, '/public/guoqi/1.png', 'fx_saudusd', 11);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (11, '13', 'OMG', '7.84817', '7.8497', '7.8493', '7.8497', '7.8440', '0', '0', '1682084360', '', '', 0, 1, '/public/guoqi/5.png', 'fx_snzdusd', 32);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (12, '14', 'XAU', '1995.316', '2005.15', '2005.06', '2005.86', '1982.28', '0', '0', '1682084360', '', '', 0, 1, '/public/jpg/llg.png', 'hf_GC', 1);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (13, '15', 'Precious metal', '25.328', '25.302', '25.311', '25.370', '24.973', '0', '0', '1682084360', '', '', 0, 1, '/public/jpg/lls.png', NULL, 2);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (14, '16', 'USD KRW', '1.33298', '1.3319', '1.3330', '1.3361', '1.3315', '0', '0', '1682084360', '', '', 0, 1, '/public/guoqi/6.png', 'fx_seurusd', 12);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (15, '17', 'XLM', '30.58296', '30.5010', '30.5797', '30.6410', '30.5010', '0', '0', '1682084360', '', '', 0, 1, '/public/guoqi/7.png', 'fx_susdjpy', 33);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (20, '22', 'BTS', '4032.57', '4114.26', '0', '4114.26', '4031.91', '0', '0', '1682084360', '', '', 0, 1, '/public/pjpg/AU.png', 'sz399300', 35);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (21, '23', 'XAG', '25.3485', '25.2306', '25.2507', '25.3475', '24.9200', '0', '0', '1682084360', NULL, NULL, 0, 1, '/public/jpg/silver.png', NULL, 1);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (27, '29', 'France Index', '1459.29', '1467.750', '0', '1469.500', '1454.750', '0', '0', '1682084360', NULL, NULL, 0, 1, '/public/guoqi/2.png', NULL, 6);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (29, '31', 'Swiss Index', '1918.61', '1970.28', '1918.84', '1983.8', '1890.6', '0', '0', '1682084360', NULL, NULL, 0, 1, '/public/guoqi/4.png', NULL, 7);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (30, '32', 'DOGE', '1.24104', '1.2437', '1.2436', '1.2446', '1.2376', '0', '0', '1682084360', NULL, NULL, 0, 1, '/public/guoqi/7.png', NULL, 18);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (32, '34', 'USDJPY', '133.572', '134.220', '134.506', '134.280', '133.560', '0', '0', '1682084360', NULL, NULL, 0, 1, '/public/guoqi/5.png', NULL, 15);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (33, '35', 'UK Index', '22.23093', '22.9514', '22.2254', '23.1648', '21.5869', '0', '0', '1682084360', NULL, NULL, 0, 1, '/public/jpg/GU.png', NULL, 8);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (34, '36', 'EURUSD', '1.09895', '1.0967', '1.0962', '1.0993', '1.0937', '0', '0', '1682084360', NULL, NULL, 0, 1, '/public/jpg/EU.png', NULL, 17);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (36, '38', 'US Index', '28249.70983', '28800.15', '28251.38', '28877', '27815', '0', '0', '1682084360', NULL, NULL, 0, 1, '/public/guoqi/3.png', NULL, 4);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (37, '39', 'Japan Index', '78.19005', '77.13', '77.37', '78.39', '76.72', '0', '0', '1682084360', NULL, NULL, 0, 1, NULL, NULL, 10);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (39, '41', 'Korea Index', '2.24392', '2.192', '2.249', '2.274', '2.164', '0', '0', '1682084360', NULL, NULL, 0, 1, NULL, NULL, 9);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (40, '42', 'LTC', '89.818', '91.3', '89.84', '91.82', '87.18', '0', '0', '1682084360', NULL, NULL, 0, 1, NULL, NULL, 30);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (43, '45', 'USD Thai Baht', '0.6253', '0.6173', '0.6173', '0.6179', '0.6124', '0', '0', '1682084360', NULL, NULL, 0, 1, NULL, NULL, 13);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (52, '56', 'OilFut', '78.188', '77.13', '77.37', '78.39', '76.72', '0', '0', '1682084360', NULL, NULL, 0, 1, NULL, NULL, 0);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (53, '57', 'SPIF', '101.66994', '101.7800', '101.8576', '102.0700', '101.6200', '0', '0', '1682084360', NULL, NULL, 0, 1, NULL, NULL, 1);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (54, '58', 'NYMEXCNG', '2.244', '2.192', '2.249', '2.274', '2.164', '0', '0', '1682084370', NULL, NULL, 0, 1, NULL, NULL, 1);
-INSERT INTO `wp_productdata` (`id`, `pid`, `Name`, `Price`, `Open`, `Close`, `High`, `Low`, `Diff`, `DiffRate`, `UpdateTime`, `rands`, `point`, `isdelete`, `is_deal`, `img`, `procode`, `sort`) VALUES (55, '59', 'USDX', '101.650', '101.780', '101.858', '102.070', '101.620', '0', '0', '1682084370', NULL, NULL, 0, 1, NULL, NULL, 0);
-COMMIT;
+INSERT INTO `wp_productdata` VALUES ('9', '11', 'Brazil Index', '3.35848', '3.7199', '3.3579', '3.7783', '3.3049', '0', '0', '1682084360', '', '', '0', '1', null, null, '5');
+INSERT INTO `wp_productdata` VALUES ('10', '12', 'USD CHF', '0.89071', '0.8925', '0.8951', '0.8953', '0.8906', '0', '0', '1682084360', '', '', '0', '1', '/public/guoqi/1.png', 'fx_saudusd', '11');
+INSERT INTO `wp_productdata` VALUES ('11', '13', 'OMG', '7.84817', '7.8497', '7.8493', '7.8497', '7.8440', '0', '0', '1682084360', '', '', '0', '1', '/public/guoqi/5.png', 'fx_snzdusd', '32');
+INSERT INTO `wp_productdata` VALUES ('12', '14', 'XAU', '1995.316', '2005.15', '2005.06', '2005.86', '1982.28', '0', '0', '1682084360', '', '', '0', '1', '/public/jpg/llg.png', 'hf_GC', '1');
+INSERT INTO `wp_productdata` VALUES ('13', '15', 'Precious metal', '25.328', '25.302', '25.311', '25.370', '24.973', '0', '0', '1682084360', '', '', '0', '1', '/public/jpg/lls.png', null, '2');
+INSERT INTO `wp_productdata` VALUES ('14', '16', 'USD KRW', '1.33298', '1.3319', '1.3330', '1.3361', '1.3315', '0', '0', '1682084360', '', '', '0', '1', '/public/guoqi/6.png', 'fx_seurusd', '12');
+INSERT INTO `wp_productdata` VALUES ('15', '17', 'XLM', '30.58296', '30.5010', '30.5797', '30.6410', '30.5010', '0', '0', '1682084360', '', '', '0', '1', '/public/guoqi/7.png', 'fx_susdjpy', '33');
+INSERT INTO `wp_productdata` VALUES ('20', '22', 'BTS', '4032.57', '4114.26', '0', '4114.26', '4031.91', '0', '0', '1682084360', '', '', '0', '1', '/public/pjpg/AU.png', 'sz399300', '35');
+INSERT INTO `wp_productdata` VALUES ('21', '23', 'XAG', '25.3485', '25.2306', '25.2507', '25.3475', '24.9200', '0', '0', '1682084360', null, null, '0', '1', '/public/jpg/silver.png', null, '1');
+INSERT INTO `wp_productdata` VALUES ('27', '29', 'France Index', '1459.29', '1467.750', '0', '1469.500', '1454.750', '0', '0', '1682084360', null, null, '0', '1', '/public/guoqi/2.png', null, '6');
+INSERT INTO `wp_productdata` VALUES ('29', '31', 'Swiss Index', '1918.61', '1970.28', '1918.84', '1983.8', '1890.6', '0', '0', '1682084360', null, null, '0', '1', '/public/guoqi/4.png', null, '7');
+INSERT INTO `wp_productdata` VALUES ('30', '32', 'DOGE', '1.24104', '1.2437', '1.2436', '1.2446', '1.2376', '0', '0', '1682084360', null, null, '0', '1', '/public/guoqi/7.png', null, '18');
+INSERT INTO `wp_productdata` VALUES ('32', '34', 'USDJPY', '133.572', '134.220', '134.506', '134.280', '133.560', '0', '0', '1682084360', null, null, '0', '1', '/public/guoqi/5.png', null, '15');
+INSERT INTO `wp_productdata` VALUES ('33', '35', 'UK Index', '22.23093', '22.9514', '22.2254', '23.1648', '21.5869', '0', '0', '1682084360', null, null, '0', '1', '/public/jpg/GU.png', null, '8');
+INSERT INTO `wp_productdata` VALUES ('34', '36', 'EURUSD', '1.09895', '1.0967', '1.0962', '1.0993', '1.0937', '0', '0', '1682084360', null, null, '0', '1', '/public/jpg/EU.png', null, '17');
+INSERT INTO `wp_productdata` VALUES ('36', '38', 'US Index', '28249.70983', '28800.15', '28251.38', '28877', '27815', '0', '0', '1682084360', null, null, '0', '1', '/public/guoqi/3.png', null, '4');
+INSERT INTO `wp_productdata` VALUES ('37', '39', 'Japan Index', '78.19005', '77.13', '77.37', '78.39', '76.72', '0', '0', '1682084360', null, null, '0', '1', null, null, '10');
+INSERT INTO `wp_productdata` VALUES ('39', '41', 'Korea Index', '2.24392', '2.192', '2.249', '2.274', '2.164', '0', '0', '1682084360', null, null, '0', '1', null, null, '9');
+INSERT INTO `wp_productdata` VALUES ('40', '42', 'LTC', '89.818', '91.3', '89.84', '91.82', '87.18', '0', '0', '1682084360', null, null, '0', '1', null, null, '30');
+INSERT INTO `wp_productdata` VALUES ('43', '45', 'USD Thai Baht', '0.6253', '0.6173', '0.6173', '0.6179', '0.6124', '0', '0', '1682084360', null, null, '0', '1', null, null, '13');
+INSERT INTO `wp_productdata` VALUES ('52', '56', 'OilFut', '78.188', '77.13', '77.37', '78.39', '76.72', '0', '0', '1682084360', null, null, '0', '1', null, null, '0');
+INSERT INTO `wp_productdata` VALUES ('53', '57', 'SPIF', '101.66994', '101.7800', '101.8576', '102.0700', '101.6200', '0', '0', '1682084360', null, null, '0', '1', null, null, '1');
+INSERT INTO `wp_productdata` VALUES ('54', '58', 'NYMEXCNG', '2.244', '2.192', '2.249', '2.274', '2.164', '0', '0', '1682084370', null, null, '0', '1', null, null, '1');
+INSERT INTO `wp_productdata` VALUES ('55', '59', 'USDX', '101.650', '101.780', '101.858', '102.070', '101.620', '0', '0', '1682084370', null, null, '0', '1', null, null, '0');
 
 -- ----------------------------
 -- Table structure for wp_productinfo
@@ -1247,32 +1160,30 @@ CREATE TABLE `wp_productinfo` (
 -- ----------------------------
 -- Records of wp_productinfo
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (11, 'Brazil Index', 5, 1, 1, '98', '0.00001', '0.00015', '0.008', '', 1681538667, 0, 'ant', 0.0000, '3,5,10,15', '', '0.008', 6, '/public/uploads/20230301/pic_11.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (12, 'USD CHF', 5, 1, 0, '79789', '0.00001', '0.00005', '0.008', '', 1681539026, 0, '29', 0.0000, '3,5,10,15', '', '0.008', 10, '/public/uploads/20230301/pic_12.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (13, 'OMG', 5, 0, 0, '232', '0.00001', '0.00005', '0.008', '', 1681538802, 0, '30', 0.0000, '3,5,10,15', '', '0.008', 10, '/public/uploads/20230301/pic_13.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (14, 'XAU', 5, 0, 1, '6978', '0.001', '0.010', '0.008', '', 1681538589, 0, 'llg', 0.0000, '3,5,10,15', '', '0.008', 4, '/public/uploads/20230203/pic_14.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (15, 'Precious metal', 5, 0, 1, '1234', '0.001', '0.01', '0.004', '', 1681538631, 0, 'lls', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230321/pic_15.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (16, 'USD KRW', 5, 0, 0, '37696', '0.00001', '0.00005', '0.00003', '', 1681539002, 0, '33', 0.0000, '3,5,10,15', '', '0.00002', 10, '/public/uploads/20230301/pic_16.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (17, 'XLM', 5, 0, 0, '6876', '0.00001', '0.00005', '0.00003', '', 1681538793, 0, '34', 0.0000, '3,5,10,15', '', '0.00002', 10, '/public/uploads/20230301/pic_17.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (22, 'BTS', 5, 0, 1, '546', '', '', '0.15', '', 1681538784, 0, '43', 0.0000, '3,5,10,15', '', '0.008', 0, '/public/uploads/20230301/pic_22.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (23, 'XAG', 5, NULL, 1, '434', '0.001', '0.010', '0.005', '', 1681538599, 0, '13', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230203/pic_23.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (29, 'France Index', 5, 1, 1, NULL, '0.01', '0.10', '0.08', '', 1681622611, 0, '96', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_29.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (31, 'Swiss Index', 5, 1, 1, NULL, '0.03', '0.18', '0.04', '', 1681538685, 0, 'eth', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_31.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (32, 'DOGE', 5, 1, 1, NULL, '0.00001', '0.00020', '0.00010', '', 1681538946, 0, '26', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_32.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (34, 'USDJPY', 5, 1, 1, NULL, '0.005', '0.015', '0.005', '', 1681538965, 0, '31', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_34.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (35, 'UK Index', 5, 1, 1, NULL, '0.00001', '0.00015', '0.00012', '', 1681538735, 0, 'sol', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_35.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (36, 'EURUSD', 5, NULL, 1, NULL, '0.00001', '0.00005', '0.00003', '', 1681538955, 0, '24', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_36.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (38, 'US Index', 5, NULL, 1, NULL, '0.00001', '0.00015', '0.008', '', 1681538652, 0, 'btc', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_38.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (39, 'Japan Index', 5, NULL, 1, NULL, '0.00001', '0.00015', '0.008', '', 1681538773, 0, '116', 0.0000, '3,5,10,15', NULL, '0.035', 0, '/public/uploads/20230301/pic_39.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (41, 'Korea Index', 5, NULL, 1, NULL, '0.00001', '0.00015', '0.008', '', 1681538747, 0, '15', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_41.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (42, 'LTC', 5, NULL, 1, NULL, '0.001', '0.015', '0.008', '', 1681538930, 0, 'ltc', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_42.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (45, 'USD Thai Baht', 5, NULL, 1, NULL, '0.001', '0.015', '0.008', '', 1681538990, 0, '27', 0.0000, '3,5,10,15', NULL, '0.008', 0, '/public/uploads/20230301/pic_45.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (56, 'OilFut', 5, NULL, 1, NULL, '0.001', '0.009', '0.0008', '国际原油', 1681563227, 0, '14', 0.0000, '3,5,10,15', NULL, '0.1', 0, '/public/uploads/20230320/pic_56.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (57, 'SPIF', 5, NULL, 1, NULL, '0.000009', '0.00015', '0.0008', '美指期货', 1681538612, 0, '11', 0.0000, '3,5,10,15', NULL, '0.1', 0, '/public/uploads/20230321/pic_57.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (58, 'NYMEXCNG', 5, NULL, 1, NULL, '0.00009', '0.00015', '0.0008', '', 1681539068, 0, '15', 0.0000, '3,5,10,15', NULL, '0.1', 0, '/public/uploads/20230321/pic_58.png');
-INSERT INTO `wp_productinfo` (`pid`, `ptitle`, `cid`, `otid`, `isopen`, `point`, `point_low`, `point_top`, `rands`, `content`, `time`, `isdelete`, `procode`, `add_data`, `protime`, `propoint`, `proscale`, `proorder`, `img`) VALUES (59, 'USDX', 5, NULL, 1, NULL, '0.0009', '0.0015', '0.0008', '', 1681538575, 0, '22', 0.0000, '3,5,10,15', NULL, '0.1', 0, '/public/uploads/20230321/pic_59.png');
-COMMIT;
+INSERT INTO `wp_productinfo` VALUES ('11', 'Brazil Index', '5', '1', '1', '98', '0.00001', '0.00015', '0.008', '', '1681538667', '0', 'ant', '0.0000', '3,5,10,15', '', '0.008', '6', '/public/uploads/20230301/pic_11.png');
+INSERT INTO `wp_productinfo` VALUES ('12', 'USD CHF', '5', '1', '0', '79789', '0.00001', '0.00005', '0.008', '', '1681539026', '0', '29', '0.0000', '3,5,10,15', '', '0.008', '10', '/public/uploads/20230301/pic_12.png');
+INSERT INTO `wp_productinfo` VALUES ('13', 'OMG', '5', '0', '0', '232', '0.00001', '0.00005', '0.008', '', '1681538802', '0', '30', '0.0000', '3,5,10,15', '', '0.008', '10', '/public/uploads/20230301/pic_13.png');
+INSERT INTO `wp_productinfo` VALUES ('14', 'XAU', '5', '0', '1', '6978', '0.001', '0.010', '0.008', '', '1681538589', '0', 'llg', '0.0000', '3,5,10,15', '', '0.008', '4', '/public/uploads/20230203/pic_14.png');
+INSERT INTO `wp_productinfo` VALUES ('15', 'Precious metal', '5', '0', '1', '1234', '0.001', '0.01', '0.004', '', '1681538631', '0', 'lls', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230321/pic_15.png');
+INSERT INTO `wp_productinfo` VALUES ('16', 'USD KRW', '5', '0', '0', '37696', '0.00001', '0.00005', '0.00003', '', '1681539002', '0', '33', '0.0000', '3,5,10,15', '', '0.00002', '10', '/public/uploads/20230301/pic_16.png');
+INSERT INTO `wp_productinfo` VALUES ('17', 'XLM', '5', '0', '0', '6876', '0.00001', '0.00005', '0.00003', '', '1681538793', '0', '34', '0.0000', '3,5,10,15', '', '0.00002', '10', '/public/uploads/20230301/pic_17.png');
+INSERT INTO `wp_productinfo` VALUES ('22', 'BTS', '5', '0', '1', '546', '', '', '0.15', '', '1681538784', '0', '43', '0.0000', '3,5,10,15', '', '0.008', '0', '/public/uploads/20230301/pic_22.png');
+INSERT INTO `wp_productinfo` VALUES ('23', 'XAG', '5', null, '1', '434', '0.001', '0.010', '0.005', '', '1681538599', '0', '13', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230203/pic_23.png');
+INSERT INTO `wp_productinfo` VALUES ('29', 'France Index', '5', '1', '1', null, '0.01', '0.10', '0.08', '', '1681622611', '0', '96', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_29.png');
+INSERT INTO `wp_productinfo` VALUES ('31', 'Swiss Index', '5', '1', '1', null, '0.03', '0.18', '0.04', '', '1681538685', '0', 'eth', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_31.png');
+INSERT INTO `wp_productinfo` VALUES ('32', 'DOGE', '5', '1', '1', null, '0.00001', '0.00020', '0.00010', '', '1681538946', '0', '26', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_32.png');
+INSERT INTO `wp_productinfo` VALUES ('34', 'USDJPY', '5', '1', '1', null, '0.005', '0.015', '0.005', '', '1681538965', '0', '31', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_34.png');
+INSERT INTO `wp_productinfo` VALUES ('35', 'UK Index', '5', '1', '1', null, '0.00001', '0.00015', '0.00012', '', '1681538735', '0', 'sol', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_35.png');
+INSERT INTO `wp_productinfo` VALUES ('36', 'EURUSD', '5', null, '1', null, '0.00001', '0.00005', '0.00003', '', '1681538955', '0', '24', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_36.png');
+INSERT INTO `wp_productinfo` VALUES ('38', 'US Index', '5', null, '1', null, '0.00001', '0.00015', '0.008', '', '1681538652', '0', 'btc', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_38.png');
+INSERT INTO `wp_productinfo` VALUES ('39', 'Japan Index', '5', null, '1', null, '0.00001', '0.00015', '0.008', '', '1681538773', '0', '116', '0.0000', '3,5,10,15', null, '0.035', '0', '/public/uploads/20230301/pic_39.png');
+INSERT INTO `wp_productinfo` VALUES ('41', 'Korea Index', '5', null, '1', null, '0.00001', '0.00015', '0.008', '', '1681538747', '0', '15', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_41.png');
+INSERT INTO `wp_productinfo` VALUES ('42', 'LTC', '5', null, '1', null, '0.001', '0.015', '0.008', '', '1681538930', '0', 'ltc', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_42.png');
+INSERT INTO `wp_productinfo` VALUES ('45', 'USD Thai Baht', '5', null, '1', null, '0.001', '0.015', '0.008', '', '1681538990', '0', '27', '0.0000', '3,5,10,15', null, '0.008', '0', '/public/uploads/20230301/pic_45.png');
+INSERT INTO `wp_productinfo` VALUES ('56', 'OilFut', '5', null, '1', null, '0.001', '0.009', '0.0008', '国际原油', '1681563227', '0', '14', '0.0000', '3,5,10,15', null, '0.1', '0', '/public/uploads/20230320/pic_56.png');
+INSERT INTO `wp_productinfo` VALUES ('57', 'SPIF', '5', null, '1', null, '0.000009', '0.00015', '0.0008', '美指期货', '1681538612', '0', '11', '0.0000', '3,5,10,15', null, '0.1', '0', '/public/uploads/20230321/pic_57.png');
+INSERT INTO `wp_productinfo` VALUES ('58', 'NYMEXCNG', '5', null, '1', null, '0.00009', '0.00015', '0.0008', '', '1681539068', '0', '15', '0.0000', '3,5,10,15', null, '0.1', '0', '/public/uploads/20230321/pic_58.png');
+INSERT INTO `wp_productinfo` VALUES ('59', 'USDX', '5', null, '1', null, '0.0009', '0.0015', '0.0008', '', '1681538575', '0', '22', '0.0000', '3,5,10,15', null, '0.1', '0', '/public/uploads/20230321/pic_59.png');
 
 -- ----------------------------
 -- Table structure for wp_productprice
@@ -1288,12 +1199,10 @@ CREATE TABLE `wp_productprice` (
 -- ----------------------------
 -- Records of wp_productprice
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_productprice` (`id`, `order_min_price`, `order_max_price`) VALUES (1, '20', '50000');
-INSERT INTO `wp_productprice` (`id`, `order_min_price`, `order_max_price`) VALUES (2, '100', '100000');
-INSERT INTO `wp_productprice` (`id`, `order_min_price`, `order_max_price`) VALUES (3, '20', '1000000');
-INSERT INTO `wp_productprice` (`id`, `order_min_price`, `order_max_price`) VALUES (4, '10000', '10000000');
-COMMIT;
+INSERT INTO `wp_productprice` VALUES ('1', '20', '50000');
+INSERT INTO `wp_productprice` VALUES ('2', '100', '100000');
+INSERT INTO `wp_productprice` VALUES ('3', '20', '1000000');
+INSERT INTO `wp_productprice` VALUES ('4', '10000', '10000000');
 
 -- ----------------------------
 -- Table structure for wp_refundlog
@@ -1315,8 +1224,6 @@ CREATE TABLE `wp_refundlog` (
 -- ----------------------------
 -- Records of wp_refundlog
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_reward
@@ -1332,9 +1239,7 @@ CREATE TABLE `wp_reward` (
 -- ----------------------------
 -- Records of wp_reward
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_reward` (`id`, `reg_money`, `invest_percent`) VALUES (1, 0.00, 0.00);
-COMMIT;
+INSERT INTO `wp_reward` VALUES ('1', '0.00', '0.00');
 
 -- ----------------------------
 -- Table structure for wp_risk
@@ -1370,9 +1275,7 @@ CREATE TABLE `wp_risk` (
 -- ----------------------------
 -- Records of wp_risk
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_risk` (`id`, `to_win`, `to_loss`, `chance`, `min_price`, `min_yk`, `max_yk`, `min_yk1`, `max_yk1`, `min_yk2`, `max_yk2`, `min_yk3`, `max_yk3`, `min_yk4`, `max_yk4`, `min_gain`, `max_gain`, `special_yk`, `percent`, `min_lost`, `max_lost`, `time1`, `time2`) VALUES (8, '1058655|105865|1058674|1058676|1058677|1058679|1058678|1058681|1058680|1058675|1058685|1058686|1058687|1058668|1058688|1058690|1058676|1058691|1058689|1058692|1058709|1058685|1058685|1058689|', '1058676|1058702|1058712||1058697|1058728|1058727 |1058726|1058723|1058712 |1058711|', '10-1000:80|1000-2000:50|2000-5000:30|5000-10000:20|10000-100000000:10', '10', 20, 50, '10,20', '5,20', '10,20', '5,20', '10,20', '5,20', '10,20', '5,20', 3.0, 8.0, 0, 0.00, 5.0, 8.0, '00:00', '00:01');
-COMMIT;
+INSERT INTO `wp_risk` VALUES ('8', '1058655|105865|1058674|1058676|1058677|1058679|1058678|1058681|1058680|1058675|1058685|1058686|1058687|1058668|1058688|1058690|1058676|1058691|1058689|1058692|1058709|1058685|1058685|1058689|', '1058676|1058702|1058712||1058697|1058728|1058727 |1058726|1058723|1058712 |1058711|', '10-1000:80|1000-2000:50|2000-5000:30|5000-10000:20|10000-100000000:10', '10', '20', '50', '10,20', '5,20', '10,20', '5,20', '10,20', '5,20', '10,20', '5,20', '3.0', '8.0', '0', '0.00', '5.0', '8.0', '00:00', '00:01');
 
 -- ----------------------------
 -- Table structure for wp_slide
@@ -1387,8 +1290,6 @@ CREATE TABLE `wp_slide` (
 -- ----------------------------
 -- Records of wp_slide
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_sysbank
@@ -1406,9 +1307,7 @@ CREATE TABLE `wp_sysbank` (
 -- ----------------------------
 -- Records of wp_sysbank
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_sysbank` (`id`, `bank_name`, `bank_addr`, `username`, `card_no`) VALUES (1, 'Please contact online customer service to obtain, thank you', 'Please contact online customer service to obtain, thank you', 'Please contact online customer service to obtain, thank you', 'Please contact online customer service to obtain, thank you');
-COMMIT;
+INSERT INTO `wp_sysbank` VALUES ('1', 'Please contact online customer service to obtain, thank you', 'Please contact online customer service to obtain, thank you', 'Please contact online customer service to obtain, thank you', 'Please contact online customer service to obtain, thank you');
 
 -- ----------------------------
 -- Table structure for wp_userbind
@@ -1425,8 +1324,6 @@ CREATE TABLE `wp_userbind` (
 -- ----------------------------
 -- Records of wp_userbind
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_usercode
@@ -1444,8 +1341,6 @@ CREATE TABLE `wp_usercode` (
 -- ----------------------------
 -- Records of wp_usercode
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_userinfo
@@ -1495,34 +1390,8 @@ CREATE TABLE `wp_userinfo` (
 -- ----------------------------
 -- Records of wp_userinfo
 -- ----------------------------
-BEGIN;
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058647, 'admin', '123456', '', '157692725', 1480061674, 2, 3, 0, '', '', '', 1682084796, '210.0.158.206', '', '', '', '', '0', 0, 0, '', 'admin', '', '1526017454', 0.00, 0.00, 100, 0.00, '', '', 0, 0, 1, NULL);
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058649, 'ggabram', '123456', '123456', 'ggabram', 1674905731, 0, 0, 0, '1058650', NULL, NULL, 1681959585, '84.17.45.179', NULL, NULL, NULL, NULL, '0', 0, 0, NULL, '高高', '211410199608131876', '1681959585', 9103.84, 17200.00, 100, NULL, '73340', '', 0, 1681959585, 1, NULL);
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058737, 'mercedeswpatg34@gmail.com', '159357', '159357', 'mercedeswpatg34@gmail.com', 1681392268, 0, 0, 0, '', NULL, NULL, 1681797238, '203.91.85.212', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'mercedeswpatg34@gmail.com', '', '1681797238', 4953.64, 200.00, 100, NULL, '19046', 'hantecvip.com', 0, 1681797709, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058738, 'lmitheadenha25547@gmail.com', 'cc258258', 'qazwsxedc123.@', 'lmitheadenha25547@gmail.com', 1681394220, 0, 0, 0, '', NULL, NULL, 1681803865, '36.249.156.6', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'lmitheadenha25547@gmail.com', '', '1681803865', 64558.43, 0.00, 100, NULL, '77587', 'hantec11.com', 0, 1681803865, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058739, 'pollyca23980@gmail.com', '806221', '806221', 'pollyca23980@gmail.com', 1681394984, 0, 0, 0, '', NULL, NULL, 1681536949, '36.249.156.158', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'pollyca23980@gmail.com', '', '1681536949', 11689.70, 0.00, 100, NULL, '28924', 'hantec11.com', 0, 1681628327, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058740, 'kendrickcarterhy@gmail.com', '158158', '158158', 'kendrickcarterhy@gmail.com', 1681394999, 0, 0, 0, '', NULL, NULL, 1681538048, '103.65.43.91', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'kendrickcarterhy@gmail.com', '', '1681538048', 2721.85, 0.00, 100, NULL, '59368', 'hantec11.com', 0, 1681624182, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058741, 'hkhificduhkct@gmail.com', 'qaz123456', '147258', 'hkhificduhkct@gmail.com', 1681395420, 0, 0, 0, '', NULL, NULL, 1681651365, '36.249.156.60', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'hkhificduhkct@gmail.com', '', '1681651365', 14935.32, 0.00, 100, NULL, '61658', 'hantec11.com', 0, 1681651365, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058742, 'bardrenaegor28963@gmail.com', 'cc123321', 'qazwsxedc123.@', 'bardrenaegor28963@gmail.com', 1681472091, 0, 0, 0, '', NULL, NULL, 1682083415, '103.138.75.119', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'bardrenaegor28963@gmail.com', '', '1682083415', 58725.97, 0.00, 100, NULL, '91866', 'hantec11.com', 0, 1682083415, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058743, 'joshwildreerm95875@gmail.com', 'qwe123', 'qwe123', 'joshwildreerm95875@gmail.com', 1681537096, 0, 0, 0, '', NULL, NULL, 1681538048, '103.43.162.133', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'joshwildreerm95875@gmail.com', '', '1681538048', 5399.70, 0.00, 100, NULL, '63921', 'hantec11.com', 0, 1681538048, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058744, 'turnert25324@gmail.com', '158158', '158158', 'turnert25324@gmail.com', 1681537841, 0, 0, 0, '', NULL, NULL, 1681700401, '103.65.43.91', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'turnert25324@gmail.com', '', '1681700401', 12930.80, 0.00, 100, NULL, '91895', 'www.hantec11.com', 0, 1681700401, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058745, 'urbanmanryru31144@gmail.com', '158158', '158158', 'urbanmanryru31144@gmail.com', 1681539624, 0, 0, 0, '', NULL, NULL, 1681539656, '103.186.113.177', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'urbanmanryru31144@gmail.com', '', '1681539656', 13692.21, 0.00, 100, NULL, '23681', 'hantec11.com', 0, 1681539656, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058746, '85261880972', 'cc147147', 'cc147147', '85261880972', 1681623324, 0, 0, 0, '', NULL, NULL, 1682078597, '103.138.75.119', '', NULL, NULL, NULL, '0', 0, 0, NULL, '85261880972', '', '1682078597', 87307.22, 0.00, 100, NULL, '74237', 'hantec11.com', 0, 1682081998, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058747, 'joannamiss520@gmail.com', '159357.a', '159357.a', 'joannamiss520@gmail.com', 1681624277, 0, 0, 0, '', NULL, NULL, 1682045391, '205.198.121.27', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'joannamiss520@gmail.com', '', '1682045391', 21093.67, 0.00, 100, NULL, '96894', 'www.hantec11.com', 0, 1682045391, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058748, 'collazokor12113@gmail.com', '806221', '806221', 'collazokor12113@gmail.com', 1681629263, 0, 0, 0, '', NULL, NULL, 1681629286, '150.230.37.162', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'collazokor12113@gmail.com', '', '1681629286', 0.00, 0.00, 100, NULL, '32387', 'hantec11.com', 0, 1681629286, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058749, '85290281194', '159357.a', '159357.a', '85290281194', 1681635796, 0, 0, 0, '', NULL, NULL, 1681635796, '203.91.85.1', '', NULL, NULL, NULL, '0', 0, 0, NULL, '85290281194', '', '1681635796', 0.00, 0.00, 100, NULL, '', 'www.hantec11.com', 0, 1681640161, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058750, 'qiaoyi476@gmail.com', 'qiaoyi999', 'qiaoyi999', 'qiaoyi476@gmail.com', 1681648332, 0, 0, 0, '', NULL, NULL, 1681648889, '103.138.75.119', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'qiaoyi476@gmail.com', '', '1681648889', 11598.52, 0.00, 100, NULL, '76988', 'hantec11.com', 0, 1681648889, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058751, 'weiqi1314520000@gmail.com', 'wq112233', 'wq112233', 'weiqi1314520000@gmail.com', 1681650850, 0, 0, 0, '', NULL, NULL, 1681651493, '103.168.155.39', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'weiqi1314520000@gmail.com', '', '1681651493', 5686.14, 0.00, 100, NULL, '26287', 'hantec11.com', 0, 1681651493, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058752, 'tingtingas50@gmail.com', 'tt112233', 'tt112233', 'tingtingas50@gmail.com', 1681657405, 0, 0, 0, '', NULL, NULL, 1681658379, '182.239.115.102', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'tingtingas50@gmail.com', '', '1681658379', 0.00, 0.00, 100, NULL, '81042', 'hantec11.com', 0, 1681658379, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058753, 'qiaoanna079@gmail.com', '159357.a', '159357.a', 'qiaoanna079@gmail.com', 1681700960, 0, 0, 0, '', NULL, NULL, 1681998102, '49.0.242.143', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'qiaoanna079@gmail.com', '', '1681998102', 5628.24, 0.00, 100, NULL, '87289', 'www.hantec11.com', 0, 1681998415, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058754, 'annaqiao20@gmail.com', '159357.a', '159357.a', 'annaqiao20@gmail.com', 1681703837, 0, 0, 0, '', NULL, NULL, 1681999904, '159.138.36.66', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'annaqiao20@gmail.com', '', '1681999904', 19958.01, 0.00, 100, NULL, '89947', 'www.hantec11.com', 0, 1682000207, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058755, 'Vicek4@gemailll.top', 'qaz123..', 'qaz123..', 'Vicek4@gemailll.top', 1681834109, 0, 0, 0, '', NULL, NULL, 1681834680, '103.186.113.225', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'Vicek4@gemailll.top', '', '1681834680', 0.00, 0.00, 100, NULL, '26076', 'hantec11.com', 0, 1681834680, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058756, 'naxiao505@gmail.com', '159357.a', '159357.a', 'naxiao505@gmail.com', 1681836520, 0, 0, 0, '', NULL, NULL, 1682006439, '205.198.121.27', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'naxiao505@gmail.com', '', '1682006439', 3626.10, 0.00, 100, NULL, '99765', 'www.hantec11.com', 0, 1682045371, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058757, 'smartsurd2004@gmail.com', 'smartsurd@321', 'smartsurd@321', 'smartsurd2004@gmail.com', 1681919371, 0, 0, 0, '', NULL, NULL, 1681919412, '49.36.179.188', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'smartsurd2004@gmail.com', '', '1681919412', 0.00, 0.00, 100, NULL, '96230', 'hantec11.com', 0, 1681919412, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058758, 'p@gowriraju.com', 'bullzeye@9', 'bullzeye@9', 'p@gowriraju.com', 1681996672, 0, 0, 0, '', NULL, NULL, 1681997508, '49.205.249.247', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'p@gowriraju.com', '', '1681997508', 0.00, 0.00, 100, NULL, '11257', 'hantec11.com', 0, 1681997508, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058759, 'aqiao733@gmail.com', '159357.a', '159357.a', 'aqiao733@gmail.com', 1682000253, 0, 0, 0, '', NULL, NULL, 1682000277, '159.138.36.66', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'aqiao733@gmail.com', '', '1682000277', 1314.02, 0.00, 100, NULL, '94165', 'www.hantec11.com', 0, 1682001249, 1, '');
-INSERT INTO `wp_userinfo` (`uid`, `username`, `upwd`, `epwd`, `utel`, `utime`, `agenttype`, `otype`, `ustatus`, `oid`, `address`, `portrait`, `lastlog`, `lastip`, `managername`, `comname`, `comqua`, `rebate`, `feerebate`, `usertype`, `wxtype`, `openid`, `nickname`, `icard`, `logintime`, `usermoney`, `freeze`, `userpoint`, `minprice`, `sessionkey`, `domain`, `online`, `update_time`, `log_caijin`, `scard`) VALUES (1058760, 'icmarketsoo5@gmail.com', '123123', '123123', 'icmarketsoo5@gmail.com', 1682004542, 0, 0, 0, '', NULL, NULL, 1682004581, '205.198.119.123', '', NULL, NULL, NULL, '0', 0, 0, NULL, 'icmarketsoo5@gmail.com', '', '1682004581', 0.00, 0.00, 100, NULL, '99854', '27.102.113.55', 0, 1682004581, 1, '');
-COMMIT;
+INSERT INTO `wp_userinfo` VALUES ('1058647', 'admin', '123456', '', '157692725', '1480061674', '2', '3', '0', '', '', '', '1682084796', '210.0.158.206', '', '', '', '', '0', '0', '0', '', 'admin', '', '1526017454', '0.00', '0.00', '100', '0.00', '', '', '0', '0', '1', null);
+INSERT INTO `wp_userinfo` VALUES ('1058649', 'ggabram', '123456', '123456', 'ggabram', '1674905731', '0', '0', '0', '1058650', null, null, '1681959585', '84.17.45.179', null, null, null, null, '0', '0', '0', null, '高高', '211410199608131876', '1681959585', '9103.84', '17200.00', '100', null, '73340', '', '0', '1681959585', '1', null);
 
 -- ----------------------------
 -- Table structure for wp_userinvest
@@ -1548,8 +1417,6 @@ CREATE TABLE `wp_userinvest` (
 -- ----------------------------
 -- Records of wp_userinvest
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_webconfig
@@ -1572,8 +1439,6 @@ CREATE TABLE `wp_webconfig` (
 -- ----------------------------
 -- Records of wp_webconfig
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_wechat
@@ -1596,8 +1461,6 @@ CREATE TABLE `wp_wechat` (
 -- ----------------------------
 -- Records of wp_wechat
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- Table structure for wp_words
@@ -1613,13 +1476,9 @@ CREATE TABLE `wp_words` (
 -- ----------------------------
 -- Records of wp_words
 -- ----------------------------
-BEGIN;
-COMMIT;
 
 -- ----------------------------
 -- View structure for wp_view_proinfo
 -- ----------------------------
 DROP VIEW IF EXISTS `wp_view_proinfo`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY INVOKER VIEW `wp_view_proinfo` AS select `wp_productdata`.`is_deal` AS `is_deal`,`wp_productdata`.`Low` AS `Low`,`wp_productdata`.`High` AS `High`,`wp_productdata`.`Close` AS `Close`,`wp_productdata`.`Open` AS `Open`,`wp_productdata`.`Price` AS `Price`,`wp_productdata`.`isdelete` AS `isdelete`,`wp_productdata`.`Name` AS `Name`,`wp_productdata`.`pid` AS `pid`,`wp_productdata`.`sort` AS `sort`,`wp_productdata`.`UpdateTime` AS `UpdateTime`,`wp_productinfo`.`img` AS `img`,`wp_productdata`.`Diff` AS `Diff`,`wp_productdata`.`DiffRate` AS `DiffRate` from (`wp_productinfo` join `wp_productdata`) where (`wp_productinfo`.`pid` = `wp_productdata`.`pid`);
-
-SET FOREIGN_KEY_CHECKS = 1;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY INVOKER VIEW `wp_view_proinfo` AS select `wp_productdata`.`is_deal` AS `is_deal`,`wp_productdata`.`Low` AS `Low`,`wp_productdata`.`High` AS `High`,`wp_productdata`.`Close` AS `Close`,`wp_productdata`.`Open` AS `Open`,`wp_productdata`.`Price` AS `Price`,`wp_productdata`.`isdelete` AS `isdelete`,`wp_productdata`.`Name` AS `Name`,`wp_productdata`.`pid` AS `pid`,`wp_productdata`.`sort` AS `sort`,`wp_productdata`.`UpdateTime` AS `UpdateTime`,`wp_productinfo`.`img` AS `img`,`wp_productdata`.`Diff` AS `Diff`,`wp_productdata`.`DiffRate` AS `DiffRate` from (`wp_productinfo` join `wp_productdata`) where (`wp_productinfo`.`pid` = `wp_productdata`.`pid`) ;
